@@ -1,0 +1,18 @@
+﻿Slide 01: cover + metric rail (5 key stats)
+Slide 02: editorial split - structure diagram left + component list right
+Slide 03: horizontal bar proof + model spec table (LFP)
+Slide 04: horizontal bar proof + model spec table (NMC/NCA)
+Slide 05: structure diagram + model table (cylindrical)
+Slide 06: structure diagram + spec table (prismatic)
+Slide 07: structure diagram + spec table (pouch)
+Slide 08: editorial split - Na-ion components vs Li-ion
+Slide 09: comparison table (Li vs Na)
+Slide 10: editorial close - route overview + key trends
+
+5+ distinct macro-layout families:
+1. cover + metric rail (s01)
+2. editorial split diagram+list (s02, s08)
+3. horizontal bar proof + table (s03, s04)
+4. structure diagram + model table (s05, s06, s07)
+5. full-width comparison table (s09)
+6. editorial close (s10)

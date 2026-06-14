@@ -1,0 +1,19 @@
+﻿slide size: 1280x720
+background system: dark navy (#1A1F36) primary, lighter navy (#252B48) secondary, white text
+typography pair: title/claim - bold sans 36-48px, kicker - medium sans 14px uppercase letter-spaced, body - regular sans 16-20px, table/label - regular sans 12-14px, source - light sans 9-10px
+color palette:
+  - base/neutral: white (#FFFFFF), light gray (#C8CDD5), mid gray (#6B7280)
+  - accent: amber (#F59E0B), teal (#14B8A6)
+  - secondary: coral (#F87171), sky (#38BDF8)
+  - background: dark navy (#1A1F36), card navy (#252B48)
+chart grammar: bar charts with direct labels, no heavy legends; teal primary, amber secondary
+diagram grammar: horizontal/vertical flow, rounded-rect nodes, clean arrows, teal accent for emphasis
+connector grammar: thin 1px lines, arrow tips only where direction matters
+container/box grammar: filled rounded-rect with 8px radius, 12-16px interior padding, navy background
+source/footer grammar: bottom-left 9px, gray, url/date
+page marker grammar: bottom-right, slide number, small
+title/kicker grammar: kicker uppercase amber on dark bg, claim large white bold
+data-label grammar: direct labels on chart marks, or right-side annotation rail
+brand asset policy: no fabricated logos, no approximated brand marks
+allowed layout families: cover+metric-rail, editorial split, bar-proof+margin, comparison-table, structure-diagram, dense-appendix-table
+banned motifs: decorative orbs, gradient backgrounds, card grids, rounded card scaffolding

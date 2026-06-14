@@ -1,0 +1,6 @@
+﻿task mode: create
+primary deck-profile: engineering-platform
+required proof objects: structure diagrams, comparison tables, model/spec reference tables
+brand authenticity constraints: no fabricated logos, use verified specs only
+profile-specific QA gates: technical labels must be accurate, model numbers must be real, architecture diagrams must be self-consistent
+known missing inputs: no manufacturer-provided deck template
