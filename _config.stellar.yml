@@ -1,0 +1,203 @@
+# ============================================================
+# Stellar 主题配置 — Gray2 技术笔记 · 极简白色阅读风格
+# ============================================================
+
+######## head tags ########
+preconnect:
+  - https://gcore.jsdelivr.net
+
+######## Logo ########
+logo:
+  avatar: '[{config.avatar}](/about/)'
+  title: '[{config.title}](/)'
+  subtitle: '工程 · 技术 · 生活'
+
+######## 导航栏 ########
+menubar:
+  columns: 4
+  items:
+    - id: post
+      theme: '#2d6cdf'
+      icon: solar:documents-bold-duotone
+      title: 博客
+      url: /
+    - id: wiki
+      theme: '#3dc550'
+      icon: solar:notebook-bold-duotone
+      title: 专栏
+      url: /topic/battery-tech/
+    - id: explore
+      theme: '#fa6400'
+      icon: solar:planet-bold-duotone
+      title: 归档
+      url: /blog/archives/
+    - id: about
+      theme: '#9c27b0'
+      icon: solar:user-bold-duotone
+      title: 关于
+      url: /about/
+
+######## 站点主结构树 ########
+site_tree:
+  home:
+    leftbar: welcome, recent
+    rightbar:
+  index_blog:
+    base_dir: blog
+    menu_id: post
+    leftbar: welcome, recent
+    rightbar:
+    nav_tabs:
+  index_topic:
+    base_dir: topic
+    menu_id: post
+  post:
+    menu_id: post
+    leftbar: recent
+    rightbar: toc
+  topic:
+    menu_id: post
+  wiki:
+    menu_id: wiki
+    leftbar: tree, recent
+    rightbar: toc
+  page:
+    leftbar: recent
+    rightbar: toc
+
+######## 文章 ########
+article:
+  type: tech
+  indent: false
+  cover_ratio: 2
+  auto_excerpt: 200
+  category_color:
+    '化工工程': '#2d6cdf'
+    '新能源': '#4caf50'
+    '工业工程': '#ff9800'
+    '数据科学': '#9c27b0'
+  license: '本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+
+######## 搜索 ########
+search:
+  service: local_search
+  local_search:
+    field: all
+    path: /search.json
+    content: true
+
+######## 评论（暂不启用） ########
+comments:
+  service:
+
+######## 页脚 ########
+footer:
+  social:
+    github:
+      icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/>'
+      url: https://github.com/GUORUIYE/gray2.github.io
+  sitemap:
+    - title: 导航
+      items:
+        - '[首页](/)'
+        - '[归档](/blog/archives/)'
+        - '[分类](/blog/categories/)'
+        - '[标签](/blog/tags/)'
+    - title: 关于
+      items:
+        - '[关于我](/about/)'
+        - '[GitHub](https://github.com/GUORUIYE/gray2.github.io)'
+  content: |
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。
+
+######## 标签插件 ########
+tag_plugins:
+  note:
+    default_color: ''
+    border: true
+  checkbox:
+    interactive: false
+  image:
+    fancybox: true
+  copy:
+    toast: 复制成功
+  mark:
+    default_color: yellow
+
+######## 依赖 ########
+dependencies:
+  jquery: https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js
+  marked: https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js
+  lazyload:
+    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js
+    transition: fade
+    fix_ratio: true
+
+######## 插件 ########
+plugins:
+  preload:
+    enable: true
+    service: flying_pages
+    flying_pages: https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js
+  fancybox:
+    enable: true
+    loader: /js/plugins/fancybox-loader.js
+    js: https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js
+    css: https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css
+    selector: .md-text img:not([class])
+  copycode:
+    enable: true
+    default_text: 'Copy'
+    success_text: 'Copied'
+    toast: 复制成功
+
+######## 样式 — 极简白色阅读风格 ########
+style:
+  prefers_theme: auto
+  smooth_scroll: true
+  font-size:
+    root: 16px
+    body: 17.5px
+    code: 85%
+    codeblock: 0.8125rem
+  font-family:
+    body: '"Noto Serif SC", "Source Han Serif CN", "Source Han Serif SC", system-ui, "Microsoft YaHei", "Segoe UI", sans-serif'
+    code: 'Menlo, Consolas, "Courier New", monospace'
+    codeblock: 'Menlo, Consolas, "Courier New", monospace'
+  text-align: left
+  border-radius:
+    card-l: 16px
+    card: 12px
+    card-s: 8px
+    bar: 6px
+    image-l: 12px
+    image: 8px
+    image-s: 4px
+  color:
+    theme: 'hsl(215 80% 54%)'   # #2d6cdf 温暖蓝
+    accent: 'hsl(28 100% 55%)'  # 橙色强调
+    link: 'hsl(215 90% 54%)'     # 蓝色链接
+  animated_avatar:
+    animate: auto
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。
+  gradient:
+    start: 'linear-gradient(to right, hsl(215, 80%, 54%), hsl(195, 80%, 50%))'
+  leftbar:
+    background-color: var(--card)
+  header_prefix:
+    h2: '#'
+    h3: '='
+    h4: '|'
+
+######## 默认占位图 ########
+default:
+  avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg
+  link: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg
+  cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg
+  image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg
