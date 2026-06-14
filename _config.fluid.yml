@@ -1,0 +1,152 @@
+# Hexo Fluid 主题完整配置
+# 文档：https://hexo.fluid-dev.com/docs/
+
+# 主题信息
+info:
+  title: Gray2 的技术笔记
+  author: Gray2
+  language: zh-CN
+
+# 导航栏
+navbar:
+  enable: true
+  # 导航栏内容
+  menu:
+    - { key: '首页', link: '/', icon: 'fas fa-home' }
+    - { key: '归档', link: '/archives/', icon: 'fas fa-archive' }
+    - { key: '分类', link: '/categories/', icon: 'fas fa-folder-open' }
+    - { key: '标签', link: '/tags/', icon: 'fas fa-tags' }
+    - { key: '关于', link: '/about/', icon: 'fas fa-user' }
+    - { key: 'RSS', link: '/atom.xml', icon: 'fas fa-rss' }
+  # 导航栏吸顶
+  sticky: true
+
+# 首页配置
+index:
+  # 首页大图(hero)
+  banner: false
+  slogan:
+    enable: true
+    text: '工程 · 技术 · 生活'
+  # 文章摘要
+  auto_excerpt:
+    enable: true
+    length: 150
+  # 每页文章数
+  per_page: 8
+
+# 文章页配置
+post:
+  # 文章目录
+  toc:
+    enable: true
+    headingSelector: 'h2,h3,h4'
+  # 代码复制按钮
+  copy_code:
+    enable: true
+  # 文章字数统计
+  word_count:
+    enable: true
+  # 阅读时长
+  reading_time:
+    enable: true
+  # 版权声明
+  copyright:
+    enable: true
+    content:
+      author: 'Gray2'
+      url: 'https://gray2.github.io'
+  # 上一篇/下一篇导航
+  prev_next:
+    enable: true
+  # 代码高亮主题
+  highlight:
+    theme: 'atom-one-dark'
+  # 文章置顶
+  sticky:
+    enable: true
+
+# 自定义页面
+page:
+  # 关于页
+  about:
+    enable: true
+    icon: 'fas fa-user'
+    subtitle: '关于我'
+
+# 侧边栏
+sidebar:
+  enable: true
+  # 作者卡片
+  author:
+    enable: true
+    nickname: Gray2
+    avatar: '/img/avatar.png'
+    desc: '新能源制造业工程师 | 技术思考者'
+    social:
+      - { title: 'GitHub', link: 'https://github.com/Gray2', icon: 'fab fa-github' }
+      - { title: 'RSS', link: '/atom.xml', icon: 'fas fa-rss' }
+  # 最新文章
+  recent_posts:
+    enable: true
+    limit: 5
+  # 标签云
+  tagcloud:
+    enable: true
+  # 分类树
+  categories:
+    enable: true
+
+# Footer 页脚
+footer:
+  enable: true
+  # 年份
+  since: 2024
+  # 自定义内容
+  custom_text: ''
+  # ICP 备案（可选）
+  # icp:
+  #   enable: true
+  #   text: '粤ICP备xxxxxx号'
+  #   link: 'https://beian.miit.gov.cn/'
+
+# 评论系统
+comments:
+  enable: false  # 先关闭，后续可按需开启
+  type: 'twikoo'
+  # Twikoo 配置
+  # twikoo:
+  #   envId: 'https://xxx.vercel.app'
+
+# 功能增强
+functional:
+  # 懒加载
+  lazyload:
+    enable: true
+  # Pjax 无刷新跳转
+  pjax:
+    enable: true
+  # 打字机效果
+  typing:
+    enable: true
+  # 网页访问统计（不蒜子）
+  busuanzi:
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
+
+# 自定义资源
+custom_css: /css/custom.css
+custom_js: /js/custom.js
+
+# 代码块样式
+code:
+  copy_btn: true
+  highlight:
+    enable: true
+    theme: 'atom-one-dark'
+
+# 社交链接（出现在文章页等位置）
+social:
+  - { title: 'GitHub', link: 'https://github.com/Gray2', icon: 'fab fa-github' }

@@ -1,0 +1,73 @@
+/* ========== 自定义样式 ========== */
+
+/* 正文行高优化 */
+.post-content p {
+  line-height: 1.8;
+}
+
+/* 代码块阴影 */
+.markdown-body pre {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+/* 文章首字下沉 */
+.post-content > p:first-of-type::first-letter {
+  font-size: 3em;
+  font-weight: bold;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+  color: #2c3e50;
+}
+
+/* h2/h3 标题左边框 */
+.markdown-body h2 {
+  border-left: 4px solid #1e90ff;
+  padding-left: 12px;
+}
+.markdown-body h3 {
+  border-left: 3px solid #48a9fe;
+  padding-left: 10px;
+}
+
+/* 自定义块引用样式 */
+.markdown-body blockquote {
+  border-left: 4px solid #95a5a6;
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  color: #555;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ========== 移动端适配 ========== */
+@media (max-width: 768px) {
+  /* 文章正文内边距 */
+  .post-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* 表格水平滚动 */
+  .markdown-body table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* 代码块字体缩小 */
+  .markdown-body pre code {
+    font-size: 13px;
+  }
+
+  /* 首页卡片间距缩减 */
+  .board {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  /* 导航栏汉堡菜单 */
+  .navbar-toggle {
+    display: block !important;
+  }
+}
