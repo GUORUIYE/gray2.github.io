@@ -1,0 +1,182 @@
+# ============================================================
+# Stellar 主题配置 - 极简白色阅读风格
+# ============================================================
+
+######## Style ########
+style:
+  # 主色调
+  color:
+    theme: '#2d6cdf'       # 品牌蓝
+    accent: '#FA6400'       # 强调橙
+    # 链接
+    link: '#2d6cdf'
+    link_hover: '#1a4fa8'
+  # 暗色模式
+  prefers_theme: auto
+
+  # 圆角
+  border_radius: 0          # 极简风格，取消圆角
+
+  # 字体
+  fonts:
+    sans-serif: >
+      -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Noto Sans SC", "Source Han Sans SC", "PingFang SC",
+      "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif
+    serif: >
+      "Noto Serif SC", "Source Han Serif CN", "Source Han Serif SC",
+      "Noto Serif CJK SC", "Songti SC", Georgia, serif
+
+  # 文章正文使用衬线字体
+  article:
+    font_family: serif      # 阅读体验更好
+    font_size: 16px
+    line_height: 1.8
+
+  # 代码
+  code:
+    font_family: 'Cascadia Code, JetBrains Mono, Fira Code, Menlo, Consolas, monospace'
+    font_size: 14px
+
+  # 高亮
+  highlightjs_theme: atom-one-dark
+
+  # 文章卡片
+  card:
+    background: '#ffffff'
+    shadow: '0 1px 3px rgba(0,0,0,0.04)'
+    radius: 0
+
+  # 页面背景
+  body:
+    background: '#fafafa'
+
+  # 大屏宽度
+  article_width: 820px
+  content_width: 960px
+
+  # 文章卡片留白
+  article_card_padding: 48px 56px
+
+
+######## Logo & Header ########
+logo:
+  avatar: '[/about/]'
+  title: '[Gray2 的技术笔记](/)'
+  subtitle: '工程 · 技术 · 生活'
+
+
+######## Navigation ########
+menubar:
+  columns: 4
+  items:
+    - id: post
+      theme: '#2d6cdf'
+      icon: solar:documents-bold-duotone
+      title: 博客
+      url: /
+    - id: categories
+      theme: '#FA6400'
+      icon: solar:folder-bold-duotone
+      title: 专栏
+      url: /categories/
+    - id: archives
+      theme: '#2d6cdf'
+      icon: solar:archive-bold-duotone
+      title: 归档
+      url: /archives/
+    - id: about
+      theme: '#2d6cdf'
+      icon: solar:user-id-bold-duotone
+      title: 关于
+      url: /about/
+
+
+######## Site Tree ########
+site_tree:
+  home:
+    leftbar: welcome, recent
+    rightbar:
+  index_blog:
+    base_dir: blog
+    menu_id: post
+    leftbar: welcome, recent
+    rightbar:
+    nav_tabs:
+  post:
+    menu_id: post
+    leftbar: related, recent
+    rightbar: toc
+  page:
+    leftbar: recent
+    rightbar: toc
+
+
+######## Article ########
+article:
+  # 首页显示摘要
+  auto_excerpt: 200
+  # 文章元信息
+  meta:
+    author: false
+    date: true
+    updated: false
+    categories: true
+    tags: true
+    wordcount: true
+  # 版权声明
+  copyright:
+    enable: true
+    creative_commons: 'by-nc-sa'
+    # 格式：本文作者 {author}，原标题：{title}，原文地址：{url}
+    # 在 url 处添加自定义文字：{url 本文链接}
+  # 打赏
+  reward:
+    enable: false
+
+
+######## Tag Plugins ########
+tag_plugins:
+  note:
+    enable: true
+  gallery:
+    enable: true
+  progress:
+    enable: true
+  timeline:
+    enable: true
+  checkbox:
+    enable: true
+  copy:
+    enable: true
+
+
+######## Comments ########
+comments:
+  enable: false         # 暂不启用评论
+  service: ''
+
+
+######## Search ########
+search:
+  enable: true
+  service: local-search
+
+
+######## Footer ########
+footer:
+  # 社交链接
+  social:
+    - title: GitHub
+      url: https://github.com/GUORUIYE
+      icon: solar:github-line-duotone
+  # 备案号
+  beian: ''
+  # 运行时间
+  runtime:
+    enable: false
+  # 统计
+  analytics:
+    enable: false
+  # 页脚导航
+  nav: true
