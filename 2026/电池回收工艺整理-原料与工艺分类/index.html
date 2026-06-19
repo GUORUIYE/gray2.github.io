@@ -1,0 +1,1346 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
+  
+  
+  <meta name="generator" content="Hexo 8.1.2">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <title>电池回收工艺整理——按原料与工艺分类 - Gray2 的技术笔记</title>
+
+  
+    <meta name="description" content="按回收原料（正极&#x2F;负极&#x2F;电解液&#x2F;其他）与工艺路线分类整理电池回收工艺，涵盖三元、LFP、LCO、LMO 正极回收，石墨负极回收，电解液回收等全链路线。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电池回收工艺整理——按原料与工艺分类">
+<meta property="og:url" content="https://guoruiye.github.io/gray2.github.io/2026/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA%E6%95%B4%E7%90%86-%E5%8E%9F%E6%96%99%E4%B8%8E%E5%B7%A5%E8%89%BA%E5%88%86%E7%B1%BB/">
+<meta property="og:site_name" content="Gray2 的技术笔记">
+<meta property="og:description" content="按回收原料（正极&#x2F;负极&#x2F;电解液&#x2F;其他）与工艺路线分类整理电池回收工艺，涵盖三元、LFP、LCO、LMO 正极回收，石墨负极回收，电解液回收等全链路线。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-14T10:20:00.000Z">
+<meta property="article:modified_time" content="2026-06-14T10:20:00.000Z">
+<meta property="article:author" content="Gray2">
+<meta property="article:tag" content="工艺">
+<meta property="article:tag" content="正极材料">
+<meta property="article:tag" content="湿法冶金">
+<meta property="article:tag" content="电池回收">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="正极材料,湿法冶金,电池回收,工艺">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/gray2.github.io/atom.xml" title="Gray2 的技术笔记" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/gray2.github.io/css/main.css?v=1.33.1">
+
+
+  
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gray2","sameAs":[]},"dateCreated":"2026-06-14T18:20:00+08:00","dateModified":"2026-06-14T18:20:00+08:00","datePublished":"2026-06-14T18:20:00+08:00","description":"","headline":"电池回收工艺整理——按原料与工艺分类","mainEntityOfPage":{"@type":"WebPage","@id":"https://guoruiye.github.io/gray2.github.io/2026/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA%E6%95%B4%E7%90%86-%E5%8E%9F%E6%96%99%E4%B8%8E%E5%B7%A5%E8%89%BA%E5%88%86%E7%B1%BB/"},"publisher":{"@type":"Organization","name":"Gray2","sameAs":[]},"url":"https://guoruiye.github.io/gray2.github.io/2026/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA%E6%95%B4%E7%90%86-%E5%8E%9F%E6%96%99%E4%B8%8E%E5%B7%A5%E8%89%BA%E5%88%86%E7%B1%BB/","keywords":"正极材料, 湿法冶金, 电池回收, 工艺","image":[]}</script>
+  
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/gray2.github.io/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="[/about/]" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Gray2 的技术笔记</div><div class="sub cap">工程 · 技术 · 生活</div></a></div></header>
+
+<div class="nav-area">
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/gray2.github.io/" style="color:#2d6cdf"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="专栏" href="/gray2.github.io/categories/" style="color:#FA6400">solar:folder-bold-duotone</a><a class="nav-item" title="归档" href="/gray2.github.io/archives/" style="color:#2d6cdf">solar:archive-bold-duotone</a><a class="nav-item" title="关于" href="/gray2.github.io/about/" style="color:#2d6cdf">solar:user-id-bold-duotone</a></nav>
+</div>
+<div class="widgets">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/gray2.github.io/2026/battery-tech-9-selection-guide/"><span class="title">电池选型实战指南：不同应用场景下的技术路线选择</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-7-recycling-economics/"><span class="title">电池回收的经济账：黑粉中的有价金属分布与毛利分析</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-8-cell-micro-world/"><span class="title">电芯内部的微观世界：正极、负极、电解液、隔膜的配方密码</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-6-recycling-process/"><span class="title">锂电池回收工艺三国演义：火法、湿法、直接回收的较量</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-5-sodium-ion/"><span class="title">钠离子电池：锂资源的破局者还是补充者？</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-3-lfp-renaissance/"><span class="title">磷酸铁锂：从低电导率到刀片电池的逆袭之路</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-4-4680-teardown/"><span class="title">4680 大圆柱电池深度拆解：特斯拉 NCA vs 比亚迪 LFP</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-2-ncm-high-nickel/"><span class="title">NCM 三元材料的镍钴博弈：高镍化进程中的技术挑战</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-10-next-gen/"><span class="title">下一代电池技术前瞻：固态、锂硫与锂空气的工程之路</span></a><a class="item title" href="/gray2.github.io/2026/battery-tech-1-cathode-panorama/"><span class="title">正极材料全景图谱：从 LFP 到 NCM 到钠电的六大家族</span></a></div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" title="GitHub" href="https://github.com/GUORUIYE" target="_blank" rel="external nofollow noopener noreferrer">solar:github-line-duotone</a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/gray2.github.io/gray2.github.io/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/gray2.github.io/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/gray2.github.io/categories/%E5%B7%A5%E4%B8%9A%E5%B7%A5%E7%A8%8B/">工业工程</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-06-14T10:20:00.000Z">2026-06-14</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-06-14T10:20:00.000Z">2026-06-14</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>电池回收工艺整理——按原料与工艺分类</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><blockquote>
+<p>来源：乐享知识库电池回收工艺部文档（邦普 BRUNP 内部资料、学术论文、行业报告等）<br>整理日期：2026-06-14</p>
+</blockquote>
+<hr>
+<h2 id="一、按回收原料分类"><a href="#一、按回收原料分类" class="headerlink" title="一、按回收原料分类"></a>一、按回收原料分类</h2><h3 id="1-正极材料回收"><a href="#1-正极材料回收" class="headerlink" title="1. 正极材料回收"></a>1. 正极材料回收</h3><table>
+<thead>
+<tr>
+<th>原料类型</th>
+<th>代表性物料</th>
+<th>主要回收产物</th>
+<th>主加工艺路线</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>三元正极粉</strong> (NCM111&#x2F;523&#x2F;622&#x2F;811, NCA)</td>
+<td>镍钴锰酸锂、镍钴铝酸锂</td>
+<td>NiSO₄、CoSO₄、MnSO₄、Li₂CO₃&#x2F;LiOH → 三元前驱体 → 三元正极材料</td>
+<td>湿法冶金浸出→萃取分离→合成</td>
+</tr>
+<tr>
+<td><strong>磷酸铁锂正极 (LFP)</strong></td>
+<td>LiFePO₄、FePO₄</td>
+<td>再生 LFP 正极材料、Li₂CO₃</td>
+<td>直接修复再生（固态烧结&#x2F;水热&#x2F;共晶盐）</td>
+</tr>
+<tr>
+<td><strong>钴酸锂正极 (LCO)</strong></td>
+<td>LiCoO₂、Co₃O₄</td>
+<td>再生 LCO、CoSO₄</td>
+<td>固态烧结&#x2F;水热再锂化 + 退火</td>
+</tr>
+<tr>
+<td><strong>锰酸锂正极 (LMO)</strong></td>
+<td>LiMn₂O₄</td>
+<td>再生 LMO</td>
+<td>水热再锂化（0.1M LiOH 最佳）</td>
+</tr>
+<tr>
+<td><strong>纯钴电池废料</strong></td>
+<td>纯钴极片、纯钴粉料</td>
+<td>CoSO₄</td>
+<td>酸浸→除杂→萃取</td>
+</tr>
+</tbody></table>
+<h3 id="2-负极材料回收"><a href="#2-负极材料回收" class="headerlink" title="2. 负极材料回收"></a>2. 负极材料回收</h3><table>
+<thead>
+<tr>
+<th>原料类型</th>
+<th>代表性物料</th>
+<th>主要回收产物</th>
+<th>主加工艺路线</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>石墨负极</strong></td>
+<td>石墨 + 铜箔</td>
+<td>再生石墨、Cu 箔</td>
+<td>水洗除 SEI + 酸浸除金属杂质 + 高温退火</td>
+</tr>
+<tr>
+<td><strong>石墨增值转化</strong></td>
+<td>废石墨 + 铜箔</td>
+<td>C&#x2F;CuO 复合负极</td>
+<td>原位氧化法（同步转化石墨和铜集流体）</td>
+</tr>
+<tr>
+<td><strong>石墨→Si-rGO</strong></td>
+<td>废石墨</td>
+<td>多孔硅 + 石墨烯 → Si-rGO 复合负极</td>
+<td>分离→制备多孔硅和 GO→静电自组装</td>
+</tr>
+</tbody></table>
+<h3 id="3-电解液回收"><a href="#3-电解液回收" class="headerlink" title="3. 电解液回收"></a>3. 电解液回收</h3><table>
+<thead>
+<tr>
+<th>原料类型</th>
+<th>代表性组分</th>
+<th>主要回收产物</th>
+<th>主加工艺路线</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>有机溶剂</strong></td>
+<td>EC、DMC、DEC、EMC、PC（占 80%+）</td>
+<td>纯化碳酸酯溶剂</td>
+<td>精馏提纯</td>
+</tr>
+<tr>
+<td><strong>锂盐</strong></td>
+<td>LiPF₆（占 15%，约 55万元&#x2F;吨）</td>
+<td>LiPF₆ 晶体、Li₂CO₃、LiF、CaF₂</td>
+<td>直接回收法&#x2F;锂盐转化法</td>
+</tr>
+<tr>
+<td><strong>添加剂</strong></td>
+<td>VC、FEC、PS 等</td>
+<td>目前较少回收</td>
+<td>含量低，尚未规模开展</td>
+</tr>
+</tbody></table>
+<h3 id="4-其他物料回收"><a href="#4-其他物料回收" class="headerlink" title="4. 其他物料回收"></a>4. 其他物料回收</h3><table>
+<thead>
+<tr>
+<th>原料类型</th>
+<th>主要产物</th>
+<th>工艺简述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>电池浆料</strong>（含塑料袋、手套等异物）</td>
+<td>电池粉 + NMP 浓缩液</td>
+<td>破碎捞渣→絮凝沉降→液固分离→热处理→精馏</td>
+</tr>
+<tr>
+<td><strong>极片边角料</strong></td>
+<td>极片粉（正极&#x2F;石墨粉）、铝渣、铜</td>
+<td>多级破碎→分选→洗涤</td>
+</tr>
+<tr>
+<td><strong>隔膜（PE&#x2F;PP）</strong></td>
+<td>回收隔膜</td>
+<td>去离子水清洗→干燥</td>
+</tr>
+<tr>
+<td><strong>PVDF 粘结剂</strong></td>
+<td>回收 PVDF</td>
+<td>NMP&#x2F;THF 溶解→沉淀回收，或 Cyrene 绿色溶剂分离</td>
+</tr>
+<tr>
+<td><strong>铜箔、铝箔</strong></td>
+<td>金属铜、金属铝</td>
+<td>破碎分选→涡电流&#x2F;比重法&#x2F;色选</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="二、按工艺方法分类"><a href="#二、按工艺方法分类" class="headerlink" title="二、按工艺方法分类"></a>二、按工艺方法分类</h2><h3 id="1-预处理工艺"><a href="#1-预处理工艺" class="headerlink" title="1. 预处理工艺"></a>1. 预处理工艺</h3><h4 id="1-1-放电"><a href="#1-1-放电" class="headerlink" title="1.1 放电"></a>1.1 放电</h4><ul>
+<li><strong>方式</strong>：物理短路或盐水浸泡，释放残余电量</li>
+<li><strong>目的</strong>：消除安全隐患，防止拆解过程中起火&#x2F;爆炸</li>
+<li><strong>标准</strong>：磷酸铁锂 ≤ 2.5V、三元锂 ≤ 3.1V</li>
+</ul>
+<h4 id="1-2-热解（焚烧）"><a href="#1-2-热解（焚烧）" class="headerlink" title="1.2 热解（焚烧）"></a>1.2 热解（焚烧）</h4><ul>
+<li><strong>适用</strong>：软包电池、有机物含量高的物料</li>
+<li><strong>工艺</strong>：将有机物（隔膜、粘结剂、电解液）燃烧殆尽</li>
+<li><strong>产物特征</strong>：有机含量 &lt; 2%，铜铝含量 ~10%，主金属含量略有降低</li>
+</ul>
+<h4 id="1-3-多级破碎-分选"><a href="#1-3-多级破碎-分选" class="headerlink" title="1.3 多级破碎 + 分选"></a>1.3 多级破碎 + 分选</h4><ul>
+<li><strong>工序</strong>：粗破碎→多级破碎→筛分→风选→涡电流→比重法&#x2F;摇床→色选</li>
+<li><strong>分离目标</strong>：金属铜、金属铝、外壳、隔膜纸、电池粉（黑粉）</li>
+<li><strong>非标设备为主</strong>，需根据物料特性定制</li>
+</ul>
+<h4 id="1-4-PVDF-粘结剂去除（关键瓶颈）"><a href="#1-4-PVDF-粘结剂去除（关键瓶颈）" class="headerlink" title="1.4 PVDF 粘结剂去除（关键瓶颈）"></a>1.4 PVDF 粘结剂去除（关键瓶颈）</h4><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>热解（~450°C 预烧结）</td>
+<td>简单但产生 HF 腐蚀正极，微观结构可能破坏</td>
+</tr>
+<tr>
+<td>NMP 溶剂溶解</td>
+<td>有效但有毒、成本高</td>
+</tr>
+<tr>
+<td>绿色溶剂（EG&#x2F;Cyrene）</td>
+<td>几秒钟无损剥离，可回收溶剂和 PVDF</td>
+</tr>
+<tr>
+<td>水溶性粘结剂替代</td>
+<td>未来方向，简化分离</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="2-火法冶金（Pyrometallurgy）"><a href="#2-火法冶金（Pyrometallurgy）" class="headerlink" title="2. 火法冶金（Pyrometallurgy）"></a>2. 火法冶金（Pyrometallurgy）</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>原理</strong></td>
+<td>高温熔炼破坏电池材料，回收过渡金属合金</td>
+</tr>
+<tr>
+<td><strong>代表企业</strong></td>
+<td>比利时 Umicore（ValEas 工艺）</td>
+</tr>
+<tr>
+<td><strong>优点</strong></td>
+<td>工艺简单，适合大规模处理，可处理混合电池</td>
+</tr>
+<tr>
+<td><strong>缺点</strong></td>
+<td>能耗高（~0.7 kWh&#x2F;kg）、CO₂ 排放高、锂回收率低（进入炉渣）、有机溶剂作为燃料烧掉</td>
+</tr>
+<tr>
+<td><strong>产物</strong></td>
+<td>Co(OH)₂&#x2F;CoCl₂、Ni 合金、Mn 渣</td>
+</tr>
+</tbody></table>
+<h3 id="3-湿法冶金（Hydrometallurgy）⭐-最主流路线"><a href="#3-湿法冶金（Hydrometallurgy）⭐-最主流路线" class="headerlink" title="3. 湿法冶金（Hydrometallurgy）⭐ 最主流路线"></a>3. 湿法冶金（Hydrometallurgy）⭐ 最主流路线</h3><h4 id="3-1-三元正极粉湿法回收流程（邦普工艺）"><a href="#3-1-三元正极粉湿法回收流程（邦普工艺）" class="headerlink" title="3.1 三元正极粉湿法回收流程（邦普工艺）"></a>3.1 三元正极粉湿法回收流程（邦普工艺）</h4><p><strong>步骤① 浸出：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">正极粉 + H₂SO₄ → NiSO₄ + CoSO₄ + MnSO₄ + Li₂SO₄</span><br><span class="line">（必要时加 H₂O₂ 做还原剂加速反应）</span><br></pre></td></tr></table></figure>
+<ul>
+<li>低酸浸出：保持较低酸浓度，减少酸耗</li>
+<li>高酸浸出：确保反应彻底，降低残渣中贵金属含量</li>
+</ul>
+<p><strong>步骤② 除杂：</strong></p>
+<table>
+<thead>
+<tr>
+<th>杂质</th>
+<th>除杂方法</th>
+<th>化学反应</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cu</td>
+<td>铁粉置换 → 海绵铜</td>
+<td>CuSO₄ + Fe → Cu + FeSO₄</td>
+</tr>
+<tr>
+<td>Fe</td>
+<td>调 pH → 黄钠铁矾沉淀</td>
+<td>Na₂Fe₆(SO₄)₄(OH)₁₂ ↓</td>
+</tr>
+<tr>
+<td>Al</td>
+<td>调 pH → Al(OH)₃ 沉淀</td>
+<td>Al₂(SO₄)₃ + Na₂CO₃ → Al(OH)₃ ↓</td>
+</tr>
+<tr>
+<td>Cu&#x2F;Cd</td>
+<td>硫化沉淀</td>
+<td>CuSO₄ + Na₂S → CuS ↓</td>
+</tr>
+</tbody></table>
+<p><strong>步骤③ P204 萃取除杂：</strong></p>
+<ul>
+<li>萃取剂 P204 逆流萃取，控制 pH 选择性除去 Li、Ca、Mg、部分 Mn</li>
+<li>萃取后水相进入精萃工序，有机相用硫酸再生循环</li>
+</ul>
+<p><strong>步骤④ P507 萃取分离 Ni&#x2F;Co&#x2F;Mn：</strong></p>
+<ul>
+<li>控制 pH 选择性萃取分离 Ni、Co、Mn</li>
+<li>分别得到高纯度 NiSO₄、CoSO₄、MnSO₄ 溶液</li>
+</ul>
+<p><strong>步骤⑤ 提锂：</strong></p>
+<ul>
+<li>锂中间体：沉淀富集得到的粗品碳酸锂&#x2F;磷酸锂（含 Ca、Mg、重金属杂质）</li>
+<li>含锂废水：可溶性锂盐存在于水溶液中（浓度低、杂质高）</li>
+</ul>
+<p><strong>步骤⑥ 前驱体合成 + 三元材料烧结：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NiSO₄ + CoSO₄ + MnSO₄ → 三元前驱体 → + Li₂CO₃/LiOH → 三元正极材料</span><br></pre></td></tr></table></figure>
+
+<p><strong>回收率：</strong> Ni ≥ 99.0%、Co ≥ 99.0%、Mn ≥ 99.0%、Li ≥ 85.0%</p>
+<h4 id="3-2-磷酸铁锂湿法回收"><a href="#3-2-磷酸铁锂湿法回收" class="headerlink" title="3.2 磷酸铁锂湿法回收"></a>3.2 磷酸铁锂湿法回收</h4><ul>
+<li>酸浸出 + 除杂 → FePO₄ + Li₂CO₃</li>
+<li>经济性受锂价影响显著（2022年锂价高峰时毛利率约 17.89%）</li>
+</ul>
+<h4 id="3-3-钴冶炼工艺"><a href="#3-3-钴冶炼工艺" class="headerlink" title="3.3 钴冶炼工艺"></a>3.3 钴冶炼工艺</h4><p>四大类工艺：① 高温熔炼富集后湿法提取 ② 硫酸化焙烧后浸出 ③ 还原焙烧氨浸 ④ 加压浸出</p>
+<ul>
+<li>加压浸出：流程短、浸出率高、无有害废气，发达国家广泛采用</li>
+</ul>
+<hr>
+<h3 id="4-直接回收（Direct-Recycling）⭐-前沿路线"><a href="#4-直接回收（Direct-Recycling）⭐-前沿路线" class="headerlink" title="4. 直接回收（Direct Recycling）⭐ 前沿路线"></a>4. 直接回收（Direct Recycling）⭐ 前沿路线</h3><p><strong>核心理念</strong>：不破坏电极材料的原始结构，通过补充锂离子使废电极材料直接再生，保留材料制备过程中的大部分能量价值。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>火法</th>
+<th>湿法</th>
+<th>直接回收</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>能耗</td>
+<td>~0.7 kWh&#x2F;kg</td>
+<td>~4.5 kWh&#x2F;kg</td>
+<td>~0.2 kWh&#x2F;kg</td>
+</tr>
+<tr>
+<td>回收成本</td>
+<td>~$0.7&#x2F;kg</td>
+<td>~$0.4&#x2F;kg</td>
+<td>~$0.1&#x2F;kg</td>
+</tr>
+<tr>
+<td>产物价值</td>
+<td>~$1.5&#x2F;kg</td>
+<td>~$1.5&#x2F;kg</td>
+<td>~$8.2&#x2F;kg</td>
+</tr>
+<tr>
+<td>CO₂ 排放</td>
+<td>高</td>
+<td>中</td>
+<td>低</td>
+</tr>
+</tbody></table>
+<h4 id="4-1-固态烧结再锂化"><a href="#4-1-固态烧结再锂化" class="headerlink" title="4.1 固态烧结再锂化"></a>4.1 固态烧结再锂化</h4><table>
+<thead>
+<tr>
+<th>正极类型</th>
+<th>条件</th>
+<th>性能恢复</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LFP</td>
+<td>+ Li₂CO₃, 650-700°C, N₂&#x2F;Ar&#x2F;H₂, 3-12h</td>
+<td>147 mAh&#x2F;g, 95% 容量保持率</td>
+</tr>
+<tr>
+<td>LCO</td>
+<td>+ Li₂CO₃, 800-900°C, air, 12h</td>
+<td>152 mAh&#x2F;g, 98% 循环保持率</td>
+</tr>
+<tr>
+<td>NCM111</td>
+<td>+ Li₂CO₃, 800°C, 10h + 机械活化</td>
+<td>165 mAh&#x2F;g</td>
+</tr>
+<tr>
+<td>NCM523</td>
+<td>+ Li₂CO₃, 850-920°C, O₂ 气氛</td>
+<td>140-152 mAh&#x2F;g</td>
+</tr>
+</tbody></table>
+<h4 id="4-2-水热-溶液再锂化（⭐-最通用）"><a href="#4-2-水热-溶液再锂化（⭐-最通用）" class="headerlink" title="4.2 水热&#x2F;溶液再锂化（⭐ 最通用）"></a>4.2 水热&#x2F;溶液再锂化（⭐ 最通用）</h4><ul>
+<li><strong>适用</strong>：LFP、LCO、NCM、LMO 均可</li>
+<li><strong>介质</strong>：LiOH 溶液（4M 最常用，LMO 用 0.1M）</li>
+<li><strong>条件</strong>：100-220°C, 2-20h → 后烧结 600-850°C</li>
+<li><strong>特点</strong>：自饱和再锂化（多余的 Li⁺ 不会进入结构），更具通用性</li>
+<li><strong>LFP 案例</strong>：0.2M 柠檬酸 + 0.08M LiOH, 80°C + 600°C 烧结 → 159 mAh&#x2F;g</li>
+</ul>
+<h4 id="4-3-电化学再锂化"><a href="#4-3-电化学再锂化" class="headerlink" title="4.3 电化学再锂化"></a>4.3 电化学再锂化</h4><ul>
+<li><strong>原理</strong>：以废正极为工作电极，在 Li₂SO₄ 电解液中通过外加电流驱动 Li⁺ 嵌入</li>
+<li><strong>优点</strong>：低能耗、低成本</li>
+<li><strong>缺点</strong>：需去除集流体和粘结剂，规模化有难度</li>
+<li><strong>LFP 案例</strong>：135 mAh&#x2F;g, 500 次循环保持率 95.3%</li>
+</ul>
+<h4 id="4-4-共晶盐再锂化"><a href="#4-4-共晶盐再锂化" class="headerlink" title="4.4 共晶盐再锂化"></a>4.4 共晶盐再锂化</h4><ul>
+<li><strong>介质</strong>：LiOH&#x2F;LiNO₃ 共晶（熔点 193°C）、LiCl-尿素（&lt;120°C）</li>
+<li><strong>优点</strong>：无质子环境（适合高镍 NCM）、自饱和再锂化</li>
+<li><strong>NCM523 案例</strong>：LiOH&#x2F;LiNO₃ + CH₃COOLi, 400°C → 160 mAh&#x2F;g</li>
+</ul>
+<h4 id="4-5-离子液体再锂化"><a href="#4-5-离子液体再锂化" class="headerlink" title="4.5 离子液体再锂化"></a>4.5 离子液体再锂化</h4><ul>
+<li><strong>介质</strong>：[C₂mim][NTf₂] + LiBr, 150-250°C</li>
+<li><strong>优点</strong>：无质子、不可燃、热稳定</li>
+<li><strong>缺点</strong>：离子液体成本高，需回收循环使用</li>
+</ul>
+<h4 id="4-6-石墨直接回收"><a href="#4-6-石墨直接回收" class="headerlink" title="4.6 石墨直接回收"></a>4.6 石墨直接回收</h4><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>工艺</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>水洗法</td>
+<td>LiCx + H₂O 反应去除残余 Li 和 SEI</td>
+<td>去除杂质，简单环保</td>
+</tr>
+<tr>
+<td>酸浸法</td>
+<td>H₂SO₄ + H₂O₂ 去除 Ni&#x2F;Co&#x2F;Mn 杂质</td>
+<td>纯度 99.9%</td>
+</tr>
+<tr>
+<td>高温退火</td>
+<td>N₂ 中 3000°C 石墨化</td>
+<td>原子重排、结构恢复</td>
+</tr>
+<tr>
+<td>B 掺杂升级</td>
+<td>硼酸处理 + 退火 → B 掺杂石墨</td>
+<td>接近理论容量，优于原始石墨</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="5-电解液回收工艺"><a href="#5-电解液回收工艺" class="headerlink" title="5. 电解液回收工艺"></a>5. 电解液回收工艺</h3><h4 id="5-1-富集方法对比"><a href="#5-1-富集方法对比" class="headerlink" title="5.1 富集方法对比"></a>5.1 富集方法对比</h4><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>回收率</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>冷冻法</strong></td>
+<td>低</td>
+<td>安全环保、易控制</td>
+<td>分离困难、能耗高</td>
+</tr>
+<tr>
+<td><strong>机械离心法</strong></td>
+<td>中</td>
+<td>工艺简单、易工业化</td>
+<td>能耗高、LiPF₆ 易分解、纯度低</td>
+</tr>
+<tr>
+<td><strong>溶剂浸取法</strong></td>
+<td>~90%</td>
+<td>能耗低、易控制分离</td>
+<td>有机溶剂损耗、可能产生新污染</td>
+</tr>
+<tr>
+<td><strong>超临界 CO₂ 萃取法</strong></td>
+<td>&gt;90%</td>
+<td>回收率高、无毒廉价</td>
+<td>设备要求高、投入成本大</td>
+</tr>
+</tbody></table>
+<h4 id="5-2-锂盐回收"><a href="#5-2-锂盐回收" class="headerlink" title="5.2 锂盐回收"></a>5.2 锂盐回收</h4><p><strong>直接回收法：</strong></p>
+<ul>
+<li>富集电解液 → 减压精馏分离溶剂 → 粗 LiPF₆ → 加 HF 重结晶提纯</li>
+<li>或：分析成分后补充溶剂&#x2F;添加剂 → 重新配制成电解液</li>
+</ul>
+<p><strong>锂盐转化法（更成熟）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>目标产物</th>
+<th>工艺</th>
+<th>回收率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Li₂CO₃</td>
+<td>加 NaOH → 调节 pH → 加 Na₂CO₃ 沉淀</td>
+<td>99.5%</td>
+</tr>
+<tr>
+<td>LiF</td>
+<td>加 KF&#x2F;KHSO₄ 高温反应</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CaF₂</td>
+<td>三级 Ca(OH)₂ 碱化</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="三、主要企业回收工艺"><a href="#三、主要企业回收工艺" class="headerlink" title="三、主要企业回收工艺"></a>三、主要企业回收工艺</h2><table>
+<thead>
+<tr>
+<th>企业</th>
+<th>工艺路线</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>邦普 BRUNP</strong>（中国）</td>
+<td>湿法冶金 + 定向循环</td>
+<td>回收率 Ni&#x2F;Co&#x2F;Mn &gt; 99%，Li &gt; 85%，2019 年占全国回收量 30.9%</td>
+</tr>
+<tr>
+<td><strong>格林美 GEM</strong>（中国）</td>
+<td>预处理→酸浸→分离提纯→再合成</td>
+<td>超细钴粉和镍粉，电解液燃烧处理</td>
+</tr>
+<tr>
+<td><strong>Umicore</strong>（比利时）</td>
+<td>ValEas 火法工艺</td>
+<td>高温熔炼回收 Co&#x2F;Ni，有机溶剂作燃料</td>
+</tr>
+<tr>
+<td><strong>Recupyl</strong>（法国）</td>
+<td>拆解→浸出→沉淀→净化</td>
+<td>回收 Al、Co、Li，放弃回收电解液</td>
+</tr>
+<tr>
+<td><strong>OnTo</strong>（日本）</td>
+<td>Eco-Bat 超临界 CO₂ 工艺</td>
+<td>专攻电解液回收</td>
+</tr>
+<tr>
+<td><strong>AEA</strong>（英国）</td>
+<td>低温破碎→乙腈萃取→电沉积</td>
+<td>回收 Cu、Al、CoO</td>
+</tr>
+<tr>
+<td><strong>ReCell Center</strong>（美国能源部）</td>
+<td>直接回收研发</td>
+<td>聚焦全组分直接回收，从制造到回收闭环</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="四、关键指标与挑战"><a href="#四、关键指标与挑战" class="headerlink" title="四、关键指标与挑战"></a>四、关键指标与挑战</h2><h3 id="经济性"><a href="#经济性" class="headerlink" title="经济性"></a>经济性</h3><ul>
+<li>三元电池回收毛利率：约 23.95%（受钴镍价格下行大幅压缩）</li>
+<li>磷酸铁锂电池回收毛利率：约 17.89%</li>
+<li>2022 年锂价高峰后回收成本大幅上升，行业由”强卖方市场”转向</li>
+<li>直接回收中锂源成本占回收总成本的 95%</li>
+</ul>
+<h3 id="核心挑战"><a href="#核心挑战" class="headerlink" title="核心挑战"></a>核心挑战</h3><ol>
+<li><strong>PVDF 粘结剂去除</strong>：热解产生 HF 腐蚀正极，溶剂法有毒&#x2F;成本高</li>
+<li><strong>正负极分离</strong>：浮选&#x2F;重力分离效率不理想，石墨残留影响再生纯度</li>
+<li><strong>铝铜杂质残留</strong>：筛分无法完全去除，残留在产品中影响安全</li>
+<li><strong>电解液回收</strong>：挥发&#x2F;易燃&#x2F;有毒，LiPF₆ 遇水产 HF；规模小不经济</li>
+<li><strong>NCM 系列混料</strong>：不同配方（111&#x2F;523&#x2F;622&#x2F;811）混合后几乎无法分离</li>
+<li><strong>规模放大</strong>：实验室有效 vs 工业不稳定，产品一致性难保证</li>
+</ol>
+<h3 id="未来方向"><a href="#未来方向" class="headerlink" title="未来方向"></a>未来方向</h3><ul>
+<li>电池设计标准化 + 数字身份证（BIGP）→ 提高预分类效率</li>
+<li>水溶性粘结剂替代 PVDF → 简化分离</li>
+<li>机器人自动拆解 → 降低成本和安全风险</li>
+<li>升级回收（upcycling）：NCM111 → NCM622&#x2F;811，废石墨 → Si-rGO</li>
+<li>固态电解质电池的回收体系预研</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>参考文档</strong>：邦普《电池回收方法及工艺介绍》（周游，2021.8.3）；《邦普废旧锂电池回收湿法冶金工艺介绍》（陈若葵，2021.8.2）；《锂离子电池直接回收的材料视角：原理、挑战和机遇》（Advanced Functional Materials，2023）；《退役锂离子电池电极材料的修复再生与增值化转化利用》（陈梁，2023）；《废旧电池电解液回收及高值化利用研发进展》（储能科学与技术，2022）</p>
+</blockquote>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/gray2.github.io/2026/%E7%94%B5%E6%B1%A0%E6%AD%A3%E6%9E%81%E6%9D%90%E6%96%99%E5%85%A8%E6%99%AF%E4%BB%8B%E7%BB%8D/">电池正极材料全景介绍</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/gray2.github.io/2026/%E9%94%82%E7%94%B5%E6%B1%A0%E5%90%84%E7%BB%84%E5%88%86%E5%8D%A0%E6%AF%94%E8%AF%A6%E8%A7%A3-%E4%B8%89%E5%85%83vs%E7%A3%B7%E9%93%81%E9%94%82/">锂电池各组分占比详解：三元（NCM）vs 磷酸铁锂（LFP）</a></div></section></div>
+
+
+
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Gray2</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%8C%89%E5%9B%9E%E6%94%B6%E5%8E%9F%E6%96%99%E5%88%86%E7%B1%BB"><span class="toc-text">一、按回收原料分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%AD%A3%E6%9E%81%E6%9D%90%E6%96%99%E5%9B%9E%E6%94%B6"><span class="toc-text">1. 正极材料回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%B4%9F%E6%9E%81%E6%9D%90%E6%96%99%E5%9B%9E%E6%94%B6"><span class="toc-text">2. 负极材料回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%94%B5%E8%A7%A3%E6%B6%B2%E5%9B%9E%E6%94%B6"><span class="toc-text">3. 电解液回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%85%B6%E4%BB%96%E7%89%A9%E6%96%99%E5%9B%9E%E6%94%B6"><span class="toc-text">4. 其他物料回收</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%8C%89%E5%B7%A5%E8%89%BA%E6%96%B9%E6%B3%95%E5%88%86%E7%B1%BB"><span class="toc-text">二、按工艺方法分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%A2%84%E5%A4%84%E7%90%86%E5%B7%A5%E8%89%BA"><span class="toc-text">1. 预处理工艺</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E6%94%BE%E7%94%B5"><span class="toc-text">1.1 放电</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E7%83%AD%E8%A7%A3%EF%BC%88%E7%84%9A%E7%83%A7%EF%BC%89"><span class="toc-text">1.2 热解（焚烧）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-%E5%A4%9A%E7%BA%A7%E7%A0%B4%E7%A2%8E-%E5%88%86%E9%80%89"><span class="toc-text">1.3 多级破碎 + 分选</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-PVDF-%E7%B2%98%E7%BB%93%E5%89%82%E5%8E%BB%E9%99%A4%EF%BC%88%E5%85%B3%E9%94%AE%E7%93%B6%E9%A2%88%EF%BC%89"><span class="toc-text">1.4 PVDF 粘结剂去除（关键瓶颈）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%81%AB%E6%B3%95%E5%86%B6%E9%87%91%EF%BC%88Pyrometallurgy%EF%BC%89"><span class="toc-text">2. 火法冶金（Pyrometallurgy）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B9%BF%E6%B3%95%E5%86%B6%E9%87%91%EF%BC%88Hydrometallurgy%EF%BC%89%E2%AD%90-%E6%9C%80%E4%B8%BB%E6%B5%81%E8%B7%AF%E7%BA%BF"><span class="toc-text">3. 湿法冶金（Hydrometallurgy）⭐ 最主流路线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E4%B8%89%E5%85%83%E6%AD%A3%E6%9E%81%E7%B2%89%E6%B9%BF%E6%B3%95%E5%9B%9E%E6%94%B6%E6%B5%81%E7%A8%8B%EF%BC%88%E9%82%A6%E6%99%AE%E5%B7%A5%E8%89%BA%EF%BC%89"><span class="toc-text">3.1 三元正极粉湿法回收流程（邦普工艺）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E7%A3%B7%E9%85%B8%E9%93%81%E9%94%82%E6%B9%BF%E6%B3%95%E5%9B%9E%E6%94%B6"><span class="toc-text">3.2 磷酸铁锂湿法回收</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-%E9%92%B4%E5%86%B6%E7%82%BC%E5%B7%A5%E8%89%BA"><span class="toc-text">3.3 钴冶炼工艺</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%9B%B4%E6%8E%A5%E5%9B%9E%E6%94%B6%EF%BC%88Direct-Recycling%EF%BC%89%E2%AD%90-%E5%89%8D%E6%B2%BF%E8%B7%AF%E7%BA%BF"><span class="toc-text">4. 直接回收（Direct Recycling）⭐ 前沿路线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E5%9B%BA%E6%80%81%E7%83%A7%E7%BB%93%E5%86%8D%E9%94%82%E5%8C%96"><span class="toc-text">4.1 固态烧结再锂化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-%E6%B0%B4%E7%83%AD-%E6%BA%B6%E6%B6%B2%E5%86%8D%E9%94%82%E5%8C%96%EF%BC%88%E2%AD%90-%E6%9C%80%E9%80%9A%E7%94%A8%EF%BC%89"><span class="toc-text">4.2 水热&#x2F;溶液再锂化（⭐ 最通用）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-%E7%94%B5%E5%8C%96%E5%AD%A6%E5%86%8D%E9%94%82%E5%8C%96"><span class="toc-text">4.3 电化学再锂化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-%E5%85%B1%E6%99%B6%E7%9B%90%E5%86%8D%E9%94%82%E5%8C%96"><span class="toc-text">4.4 共晶盐再锂化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-%E7%A6%BB%E5%AD%90%E6%B6%B2%E4%BD%93%E5%86%8D%E9%94%82%E5%8C%96"><span class="toc-text">4.5 离子液体再锂化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-6-%E7%9F%B3%E5%A2%A8%E7%9B%B4%E6%8E%A5%E5%9B%9E%E6%94%B6"><span class="toc-text">4.6 石墨直接回收</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%94%B5%E8%A7%A3%E6%B6%B2%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA"><span class="toc-text">5. 电解液回收工艺</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E5%AF%8C%E9%9B%86%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94"><span class="toc-text">5.1 富集方法对比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E9%94%82%E7%9B%90%E5%9B%9E%E6%94%B6"><span class="toc-text">5.2 锂盐回收</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%B8%BB%E8%A6%81%E4%BC%81%E4%B8%9A%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA"><span class="toc-text">三、主要企业回收工艺</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%85%B3%E9%94%AE%E6%8C%87%E6%A0%87%E4%B8%8E%E6%8C%91%E6%88%98"><span class="toc-text">四、关键指标与挑战</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%8F%E6%B5%8E%E6%80%A7"><span class="toc-text">经济性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%8C%91%E6%88%98"><span class="toc-text">核心挑战</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91"><span class="toc-text">未来方向</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+
+
+<script type="text/javascript">
+  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/gray2.github.io/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local-search`) {
+    ctx.search = {};
+    ctx.search.service = `local-search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/gray2.github.io/%5Bobject%20Object%5D`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }
+  
+</script>
+
+<!-- required -->
+<script src="/gray2.github.io/js/main.js?v=1.33.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
