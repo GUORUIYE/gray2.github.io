@@ -102,8 +102,8 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Gray2/gray2.github.io.git
-  branch: main
+  repo: git@github.com:GUORUIYE/gray2.github.io.git
+  branch: gh-pages
 
 # Feed
 feed:
