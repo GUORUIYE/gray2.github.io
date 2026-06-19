@@ -7,7 +7,7 @@ tags:
   - 钠电
   - 储能
   - 宁德时代
-categories: 电池技术
+categories: 电池技术材料体系
 description: 全面评估钠离子电池的技术演进、三大正极路线之争、硬碳负极瓶颈，以及钠电 vs LFP 的全维度对比。
 ---
 

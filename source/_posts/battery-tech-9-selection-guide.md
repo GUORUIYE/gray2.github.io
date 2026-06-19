@@ -10,7 +10,7 @@ tags:
   - LFP
   - NCM
   - 钠电
-categories: 电池技术
+categories: 电池技术材料体系
 description: 从乘用车、商用车、储能、消费电子、两轮车五大场景出发，提供完整的电池选型决策框架和典型案例分析。
 ---
 

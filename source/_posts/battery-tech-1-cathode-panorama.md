@@ -8,7 +8,7 @@ tags:
   - NCM
   - NCA
   - 钠离子电池
-categories: 电池技术
+categories: 电池技术材料体系
 description: 一文纵览六大正极体系的核心参数、晶体结构、应用场景与实战案例，帮你建立正极材料的全局视野。
 ---
 

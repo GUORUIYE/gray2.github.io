@@ -7,7 +7,7 @@ tags:
   - NCM
   - 高镍
   - 三元
-categories: 电池技术
+categories: 电池技术材料体系
 description: 从 NCM111 到 NCM811 的演进脉络，定量分析镍含量与循环/热稳定性的 trade-off，以及高镍体系对电解液和制造工艺的苛刻要求。
 ---
 

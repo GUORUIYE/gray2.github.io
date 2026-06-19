@@ -79,7 +79,7 @@ menubar:
       theme: '#FA6400'
       icon: solar:folder-bold-duotone
       title: 专栏
-      url: /categories/
+      url: /topics/
     - id: archives
       theme: '#2d6cdf'
       icon: solar:archive-bold-duotone

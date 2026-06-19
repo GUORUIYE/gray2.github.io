@@ -7,7 +7,7 @@ tags:
   - 湿法冶金
   - 直接回收
   - 邦普
-categories: 电池技术
+categories: 电池回收工艺
 description: 三大回收路线的工艺详解与对比——邦普湿法六步、Umicore 火法、前沿直接回收六种方法，谁将主导千亿回收市场。
 ---
 
