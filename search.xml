@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -48,7 +48,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -57,9 +57,9 @@
             
             <tag> 电池技术 </tag>
             
-            <tag> NCM </tag>
-            
             <tag> LFP </tag>
+            
+            <tag> NCM </tag>
             
             <tag> 钠电 </tag>
             
@@ -87,7 +87,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -124,7 +124,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池回收工艺 </category>
           
       </categories>
       
@@ -157,7 +157,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池回收工艺 </category>
           
       </categories>
       
@@ -190,7 +190,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -223,7 +223,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -256,7 +256,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -289,7 +289,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -322,7 +322,7 @@
       
       <categories>
           
-          <category> 电池技术 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -333,9 +333,9 @@
             
             <tag> 正极材料 </tag>
             
-            <tag> NCM </tag>
-            
             <tag> LFP </tag>
+            
+            <tag> NCM </tag>
             
             <tag> NCA </tag>
             
@@ -357,7 +357,7 @@
       
       <categories>
           
-          <category> 新能源 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -366,9 +366,9 @@
             
             <tag> 正极材料 </tag>
             
-            <tag> NCM </tag>
-            
             <tag> LFP </tag>
+            
+            <tag> NCM </tag>
             
             <tag> NCA </tag>
             
@@ -392,7 +392,7 @@
       
       <categories>
           
-          <category> 工业工程 </category>
+          <category> 电池回收工艺 </category>
           
       </categories>
       
@@ -423,7 +423,7 @@
       
       <categories>
           
-          <category> 新能源 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -454,7 +454,7 @@
       
       <categories>
           
-          <category> 新能源 </category>
+          <category> 电池技术材料体系 </category>
           
       </categories>
       
@@ -467,9 +467,9 @@
             
             <tag> 4680 </tag>
             
-            <tag> 钠离子 </tag>
-            
             <tag> 锂电池 </tag>
+            
+            <tag> 钠离子 </tag>
             
         </tags>
       

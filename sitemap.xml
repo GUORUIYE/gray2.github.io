@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/topics/</loc>
+    
+    <lastmod>2026-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/categories/</loc>
+    
+    <lastmod>2026-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-10-next-gen/</loc>
+    
+    <lastmod>2026-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-9-selection-guide/</loc>
     
     <lastmod>2026-06-19</lastmod>
@@ -11,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-7-recycling-economics/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-8-cell-micro-world/</loc>
     
     <lastmod>2026-06-19</lastmod>
     
@@ -20,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-8-cell-micro-world/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-7-recycling-economics/</loc>
     
     <lastmod>2026-06-19</lastmod>
     
@@ -47,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-3-lfp-renaissance/</loc>
-    
-    <lastmod>2026-06-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-4-4680-teardown/</loc>
     
     <lastmod>2026-06-19</lastmod>
@@ -65,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-2-ncm-high-nickel/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-3-lfp-renaissance/</loc>
     
     <lastmod>2026-06-19</lastmod>
     
@@ -74,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-10-next-gen/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/2026/battery-tech-2-ncm-high-nickel/</loc>
     
     <lastmod>2026-06-19</lastmod>
     
@@ -145,15 +163,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/categories/</loc>
-    
-    <lastmod>2026-06-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://guoruiye.github.io/gray2.github.io</loc>
@@ -171,41 +180,6 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%85%A8%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%A1%AB%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%A9%BA%E6%B0%94%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%BA%E6%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://guoruiye.github.io/gray2.github.io/tags/%E6%AD%A3%E6%9E%81%E6%9D%90%E6%96%99/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -213,28 +187,14 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/NCM/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%AB%98%E9%95%8D/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E4%B8%89%E5%85%83/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://guoruiye.github.io/gray2.github.io/tags/LFP/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/NCM/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -249,6 +209,20 @@
   
   <url>
     <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%92%A0%E7%A6%BB%E5%AD%90%E7%94%B5%E6%B1%A0/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%AB%98%E9%95%8D/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E4%B8%89%E5%85%83/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -290,55 +264,6 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E6%B9%BF%E6%B3%95%E5%86%B6%E9%87%91/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%9B%B4%E6%8E%A5%E5%9B%9E%E6%94%B6/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%82%A6%E6%99%AE/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%9E%E6%94%B6/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%80%A7/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%BB%91%E7%B2%89/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://guoruiye.github.io/gray2.github.io/tags/4680/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -367,14 +292,112 @@
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%85%A8%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%B7%A5%E8%89%BA/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%A1%AB%E7%94%B5%E6%B1%A0/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%A9%BA%E6%B0%94%E7%94%B5%E6%B1%A0/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E4%B8%8B%E4%B8%80%E4%BB%A3%E7%94%B5%E6%B1%A0/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%BA%E6%80%81%E7%94%B5%E8%A7%A3%E8%B4%A8/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%9E%E6%94%B6/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%BB%8F%E6%B5%8E%E6%80%A7/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%BB%91%E7%B2%89/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E6%B9%BF%E6%B3%95%E5%86%B6%E9%87%91/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%9B%B4%E6%8E%A5%E5%9B%9E%E6%94%B6/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%82%A6%E6%99%AE/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%80%89%E5%9E%8B/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%8A%A8%E5%8A%9B%E7%94%B5%E6%B1%A0/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%94%B5%E6%B1%A0/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -389,6 +412,27 @@
   
   <url>
     <loc>https://guoruiye.github.io/gray2.github.io/tags/LMFP/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E6%88%90%E6%9C%AC%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%B7%A5%E8%89%BA/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -436,59 +480,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%94%82%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E9%80%89%E5%9E%8B/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E5%8A%A8%E5%8A%9B%E7%94%B5%E6%B1%A0/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/tags/%E6%88%90%E6%9C%AC%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/categories/%E7%94%B5%E6%B1%A0%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/categories/%E7%94%B5%E6%B1%A0%E6%8A%80%E6%9C%AF%E6%9D%90%E6%96%99%E4%BD%93%E7%B3%BB/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/categories/%E5%B7%A5%E4%B8%9A%E5%B7%A5%E7%A8%8B/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://guoruiye.github.io/gray2.github.io/categories/%E6%96%B0%E8%83%BD%E6%BA%90/</loc>
+    <loc>https://guoruiye.github.io/gray2.github.io/categories/%E7%94%B5%E6%B1%A0%E5%9B%9E%E6%94%B6%E5%B7%A5%E8%89%BA/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
