@@ -14,9 +14,9 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 ## 当前主部署：Vercel；备选 GitHub Pages（切换部署时改此处即可）
-## Vercel:    https://blog-orpin-omega-53.vercel.app
 ## GitHub Pages: https://guoruiye.github.io/gray2.github.io
-url: https://blog-orpin-omega-53.vercel.app
+url: https://guoruiye.github.io/gray2.github.io
+root: /gray2.github.io/
 permalink: :year/:title/
 permalink_defaults:
 pretty_urls:
