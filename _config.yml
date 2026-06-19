@@ -5,16 +5,19 @@
 # Site
 title: Gray2 的技术笔记
 subtitle: '工程 · 技术 · 生活'
-description: '记录新能源制造与工业工程领域的技术思考、工艺参数优化、成本结构分析与跨界实践'
-keywords: 新能源,工艺优化,技术博客,Python,工业工程
+description: '新能源制造业工程师的技术笔记 — 锂电池材料体系（LFP/NCM/NCA/钠离子/4680）、工艺参数优化、成本结构分析、产线数据可视化与跨界工程思考'
+keywords: 锂电池,正极材料,LFP,NCM,NCA,钠离子,4680,电池回收,工艺优化,成本结构,新能源,工业工程,技术博客
 author: Gray2
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+## 当前主部署：Vercel；备选 GitHub Pages（切换部署时改此处即可）
+## Vercel:    https://blog-orpin-omega-53.vercel.app
+## GitHub Pages: https://guoruiye.github.io/gray2.github.io
 url: https://blog-orpin-omega-53.vercel.app
-permalink: :year/:month/:day/:title/
+permalink: :year/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,6 +32,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - cathode-materials/index.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -96,14 +100,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:Gray2/gray2.github.io.git
-  branch: main
+  repo: git@github.com:GUORUIYE/gray2.github.io.git
+  branch: gh-pages
 
 # Feed
 feed:
