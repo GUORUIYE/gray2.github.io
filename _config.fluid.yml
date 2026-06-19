@@ -1,0 +1,177 @@
+# Hexo Fluid 主题完整配置
+# 文档：https://hexo.fluid-dev.com/docs/
+
+# 主题信息
+info:
+  title: Gray2 的技术笔记
+  author: Gray2
+  language: zh-CN
+
+# 导航栏
+navbar:
+  enable: true
+  menu:
+    - { key: '首页', link: '/', icon: 'fas fa-home' }
+    - { key: '归档', link: '/archives/', icon: 'fas fa-archive' }
+    - { key: '分类', link: '/categories/', icon: 'fas fa-folder-open' }
+    - { key: '标签', link: '/tags/', icon: 'fas fa-tags' }
+    - { key: '关于', link: '/about/', icon: 'fas fa-user' }
+    - { key: 'RSS', link: '/atom.xml', icon: 'fas fa-rss' }
+  sticky: true
+  # 开启菜单毛玻璃
+  menu_glass: true
+
+# 首页配置
+index:
+  banner:
+    enable: true
+    type: default
+    # 浅色遮罩让背景透出
+    banner_mask:
+      enable: true
+      # 使用淡遮罩让背景可见
+      color: 'rgba(0,0,0,0.15)'
+  slogan:
+    enable: true
+    text:
+      - '记录工程实践与技术思考'
+      - '新能源 · 工艺优化 · 跨界创新'
+      - '知行合一，格物致知'
+  auto_excerpt:
+    enable: true
+    length: 200
+  per_page: 8
+  post_card:
+    enable: true
+    shadow: true
+    shadow_color: '#e3e8ee'
+
+# 文章页配置
+post:
+  toc:
+    enable: true
+    headingSelector: 'h2,h3,h4'
+  copy_code:
+    enable: true
+  word_count:
+    enable: true
+  reading_time:
+    enable: true
+  copyright:
+    enable: true
+    content:
+      author: 'Gray2'
+      url: 'https://blog-orpin-omega-53.vercel.app'
+  prev_next:
+    enable: true
+  highlight:
+    theme: 'atom-one-dark'
+  sticky:
+    enable: true
+
+# 自定义页面
+page:
+  about:
+    enable: true
+    icon: 'fas fa-user'
+    subtitle: '关于我'
+
+# 侧边栏
+sidebar:
+  enable: true
+  author:
+    enable: true
+    nickname: Gray2
+    avatar: '/img/avatar.png'
+    desc: '新能源制造业工程师 | 技术思考者'
+    social:
+      - { title: 'GitHub', link: 'https://github.com/Gray2', icon: 'fab fa-github' }
+      - { title: 'RSS', link: '/atom.xml', icon: 'fas fa-rss' }
+  recent_posts:
+    enable: true
+    limit: 5
+  tagcloud:
+    enable: true
+  categories:
+    enable: true
+
+# Footer 页脚
+footer:
+  enable: true
+  since: 2024
+  custom_text: '<span id="footer-brief">记录 · 思考 · 成长</span>'
+
+# 评论系统
+comments:
+  enable: false
+  type: 'twikoo'
+
+# 功能增强
+functional:
+  lazyload:
+    enable: true
+  pjax:
+    enable: true
+  typing:
+    enable: true
+  busuanzi:
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
+
+# ---------- 美化核心配置 ----------
+
+# 面板透明度（毛玻璃效果的关键）
+board_color: '#ffffffb3'
+board_color_dark: '#1a1a2eb3'
+
+# 自定义 CSS/JS
+custom_css: /css/custom.css
+custom_js:
+  - /js/custom.js
+
+# 代码高亮主题
+code:
+  copy_btn: true
+  highlight:
+    enable: true
+    theme: 'atom-one-dark'
+  # 行号开启（Mac 代码块依赖）
+  line_number: true
+
+# 社交链接
+social:
+  - { title: 'GitHub', link: 'https://github.com/Gray2', icon: 'fab fa-github' }
+
+# 网站图标
+favicon:
+  enable: true
+  icon: '/img/avatar.png'
+
+# ---------- CDN 源修复（国内加速）----------
+static_prefix:
+  internal_js: /js
+  internal_css: /css
+  internal_img: /img
+  anchor: https://fastly.jsdelivr.net/npm/anchor-js@4/
+  github_markdown: https://fastly.jsdelivr.net/npm/github-markdown-css@4/
+  jquery: https://fastly.jsdelivr.net/npm/jquery@3/dist/
+  bootstrap: https://fastly.jsdelivr.net/npm/bootstrap@4/dist/
+  highlightjs: https://fastly.jsdelivr.net/npm/highlight.js@11/
+  prismjs: https://fastly.jsdelivr.net/npm/prismjs@1/
+  tocbot: https://fastly.jsdelivr.net/npm/tocbot@4/dist/
+  typed: https://fastly.jsdelivr.net/npm/typed.js@2/lib/
+  fancybox: https://fastly.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/
+  nprogress: https://fastly.jsdelivr.net/npm/nprogress@0/
+  mathjax: https://fastly.jsdelivr.net/npm/mathjax@3/es5/
+  katex: https://fastly.jsdelivr.net/npm/katex@0/dist/
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
+  clipboard: https://fastly.jsdelivr.net/npm/clipboard@2/dist/
+  mermaid: https://fastly.jsdelivr.net/npm/mermaid@8/dist/
+  valine: https://fastly.jsdelivr.net/npm/valine@1/dist/
+  waline: https://fastly.jsdelivr.net/npm/@waline/client@1/dist/
+  gitalk: https://fastly.jsdelivr.net/npm/gitalk@1/dist/
+  disqusjs: https://fastly.jsdelivr.net/npm/disqusjs@1/dist/
+  twikoo: https://fastly.jsdelivr.net/npm/twikoo@1/dist/
+  hint: https://fastly.jsdelivr.net/npm/hint.css@2/

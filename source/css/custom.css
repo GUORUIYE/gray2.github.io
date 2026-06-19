@@ -1,0 +1,257 @@
+/* ============================================================
+   Gray2 Blog -- 基于 Hexo Fluid 主题的美化样式
+   参考：b.wihi.top / youyeyejie / qingshaner 等成熟方案
+   ============================================================ */
+
+/* ---------- 1. 全局毛玻璃面板 ---------- */
+#board {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+}
+
+/* ---------- 2. 导航栏毛玻璃 ---------- */
+.navbar {
+  background: rgba(255,255,255,0.75) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ---- 导航栏链接 hover 下滑线 ---- */
+.navbar .nav-item .nav-link {
+  position: relative;
+  border-radius: 0.5rem;
+  transition: color 0.2s;
+}
+.navbar .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #4a90d9;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.navbar .nav-item .nav-link:hover::after {
+  width: 60%;
+}
+
+/* ---------- 3. 首页卡片悬浮 + 滑入动效 ---------- */
+.index-card {
+  transition: all 0.5s ease;
+  transform: scale(calc(1.2 - 0.2 * var(--state)));
+  opacity: var(--state);
+  margin-bottom: 2rem;
+}
+.index-img img {
+  margin: 20px 0;
+}
+/* 卡片图片 hover 放大 */
+.index-img {
+  transition: 0.4s;
+}
+.index-card:hover .index-img {
+  transform: scale(1.05);
+}
+
+/* ---------- 4. 文章标题渐变 + 副标题 ---------- */
+#subtitle {
+  background: linear-gradient(-45deg, #0f76c1, #3a8dc0, #80d2ef, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 博客名霓虹灯效 */
+.navbar-title {
+  outline: none;
+  --c: #4a90d9;
+  text-shadow: 0 0 10px var(--c), 0 0 20px var(--c), 0 0 40px var(--c);
+  animation: neonPulse 3s ease-in-out infinite alternate;
+}
+@keyframes neonPulse {
+  from { text-shadow: 0 0 5px var(--c), 0 0 10px var(--c), 0 0 20px var(--c); }
+  to   { text-shadow: 0 0 10px var(--c), 0 0 30px var(--c), 0 0 50px var(--c); }
+}
+
+/* ---------- 5. Mac 风格代码块 ---------- */
+/* 代码块容器 */
+.markdown-body pre,
+figure.highlight {
+  border-radius: 8px;
+  padding-top: 32px !important;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* 语言标签 */
+figure.highlight::before {
+  content: attr(data-type);
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ff8d33;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* Mac 红黄绿圆点 */
+figure.highlight::after,
+.markdown-body pre::after {
+  background: #fc625d;
+  border-radius: 50%;
+  box-shadow: 18px 0 #fdbc40, 36px 0 #35cd4b;
+  content: '';
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  z-index: 1;
+}
+
+/* 代码块内去背景让圆点可见 */
+.markdown-body pre {
+  background: #282c34 !important;
+}
+
+/* 行内代码 */
+.markdown-body p code,
+.markdown-body li code {
+  background: rgba(74, 144, 217, 0.1);
+  color: #e05b35;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid rgba(74, 144, 217, 0.12);
+}
+
+/* ---------- 6. 文章排版 ---------- */
+/* 标题 */
+.markdown-body h2 {
+  border-left: 4px solid #4a90d9;
+  padding-left: 14px;
+  margin-top: 2em;
+}
+.markdown-body h3 {
+  border-left: 3px solid #e8b84b;
+  padding-left: 12px;
+  margin-top: 1.5em;
+}
+
+/* 引用块 */
+.markdown-body blockquote {
+  border-left: 4px solid #e8b84b;
+  background: rgba(232,184,75,0.06);
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 图片圆角 + 居中 */
+.markdown-body p > img,
+.markdown-body figure > img {
+  border-radius: 0.5rem;
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* 链接 */
+.markdown-body a {
+  color: #4a90d9;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.markdown-body a:hover {
+  border-bottom-color: #4a90d9;
+}
+
+/* 选中文字 */
+::selection {
+  background: rgba(74,144,217,0.2);
+  color: #1a1a2e;
+}
+
+/* ---------- 7. 滚动条 ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a0b4c8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7a95b0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ---------- 8. 全局圆角 ---------- */
+.list-group-item,
+.links .card-body,
+.navbar .dropdown-menu,
+.navbar .dropdown-item,
+#scroll-top-button {
+  border-radius: 0.5rem;
+}
+
+/* 友链卡片悬浮 */
+.links .card-body {
+  transition: all 0.4s;
+}
+.links .card-body:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ---------- 9. 标签云 ---------- */
+.tagcloud a {
+  transition: 0.3s;
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 2px;
+  border-radius: 4px;
+}
+.tagcloud a:hover {
+  transform: scale(1.08);
+  background: rgba(74,144,217,0.1);
+  color: #4a90d9 !important;
+}
+
+/* ---------- 10. 暗色模式 ---------- */
+[data-user-color-scheme='dark'] .navbar {
+  background: rgba(26,26,46,0.82) !important;
+  border-bottom-color: rgba(255,255,255,0.05);
+}
+[data-user-color-scheme='dark'] #board {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+[data-user-color-scheme='dark'] figure.highlight {
+  background: #1a1a2e;
+}
+[data-user-color-scheme='dark'] ::-webkit-scrollbar-thumb {
+  background: #556;
+}
+[data-user-color-scheme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #778;
+}
+
+/* ---------- 11. 移动端 ---------- */
+@media (max-width: 768px) {
+  .markdown-body p > img,
+  .markdown-body figure > img {
+    max-width: 95%;
+  }
+  .navbar .nav-item .nav-link::after {
+    display: none;
+  }
+}

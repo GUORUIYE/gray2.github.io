@@ -1,8 +1,6 @@
-packages:
-  - .
 allowBuilds:
   gifsicle: false
-  hexo-util: false
+  hexo-util: set this to true or false
   jpegtran-bin: false
   mozjpeg: false
   optipng-bin: false
