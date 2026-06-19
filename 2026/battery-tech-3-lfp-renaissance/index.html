@@ -1,0 +1,1029 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
+  
+  
+  <meta name="generator" content="Hexo 8.1.2">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <title>磷酸铁锂：从低电导率到刀片电池的逆袭之路 - Gray2 的技术笔记</title>
+
+  
+    <meta name="description" content="LFP 如何从电导率仅 10⁻⁹ S&#x2F;cm 的&quot;劣等生&quot;，逆袭成为全球装机量最大的正极材料，刀片电池又是如何通过结构创新弥补能量密度短板。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="磷酸铁锂：从低电导率到刀片电池的逆袭之路">
+<meta property="og:url" content="https://blog-orpin-omega-53.vercel.app/2026/battery-tech-3-lfp-renaissance/">
+<meta property="og:site_name" content="Gray2 的技术笔记">
+<meta property="og:description" content="LFP 如何从电导率仅 10⁻⁹ S&#x2F;cm 的&quot;劣等生&quot;，逆袭成为全球装机量最大的正极材料，刀片电池又是如何通过结构创新弥补能量密度短板。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-19T07:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-19T06:37:21.454Z">
+<meta property="article:author" content="Gray2">
+<meta property="article:tag" content="LFP">
+<meta property="article:tag" content="刀片电池">
+<meta property="article:tag" content="正极材料">
+<meta property="article:tag" content="电池技术">
+<meta property="article:tag" content="磷酸铁锂">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="电池技术,正极材料,LFP,磷酸铁锂,刀片电池">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Gray2 的技术笔记" type="application/atom+xml">
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.33.1">
+
+
+  
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Gray2","sameAs":[]},"dateCreated":"2026-06-19T15:00:00+08:00","dateModified":"2026-06-19T14:37:21+08:00","datePublished":"2026-06-19T15:00:00+08:00","description":"","headline":"磷酸铁锂：从低电导率到刀片电池的逆袭之路","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog-orpin-omega-53.vercel.app/2026/battery-tech-3-lfp-renaissance/"},"publisher":{"@type":"Organization","name":"Gray2","sameAs":[]},"url":"https://blog-orpin-omega-53.vercel.app/2026/battery-tech-3-lfp-renaissance/","keywords":"电池技术, 正极材料, LFP, 磷酸铁锂, 刀片电池","image":[]}</script>
+  
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/img/avatar.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Gray2 的技术笔记</div><div class="sub cap">工程 · 技术 · 生活</div></a></div></header>
+
+<div class="nav-area">
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#2d6cdf"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="专栏" href="/categories/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="归档" href="/archives/" style="color:#FA6400">solar:archive-bold-duotone</a><a class="nav-item" title="关于" href="/about/" style="color:#F44336">solar:user-bold-duotone</a></nav>
+</div>
+<div class="widgets">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/battery-tech-1-cathode-panorama/"><span class="title">正极材料全景图谱：从 LFP 到 NCM 到钠电的六大家族</span></a><a class="item title" href="/2026/battery-tech-10-next-gen/"><span class="title">下一代电池技术前瞻：固态、锂硫与锂空气的工程之路</span></a><a class="item title" href="/2026/battery-tech-9-selection-guide/"><span class="title">电池选型实战指南：不同应用场景下的技术路线选择</span></a><a class="item title" href="/2026/battery-tech-8-cell-micro-world/"><span class="title">电芯内部的微观世界：正极、负极、电解液、隔膜的配方密码</span></a><a class="item title" href="/2026/battery-tech-7-recycling-economics/"><span class="title">电池回收的经济账：黑粉中的有价金属分布与毛利分析</span></a><a class="item title" href="/2026/battery-tech-6-recycling-process/"><span class="title">锂电池回收工艺三国演义：火法、湿法、直接回收的较量</span></a><a class="item title" href="/2026/battery-tech-5-sodium-ion/"><span class="title">钠离子电池：锂资源的破局者还是补充者？</span></a><a class="item title" href="/2026/battery-tech-4-4680-teardown/"><span class="title">4680 大圆柱电池深度拆解：特斯拉 NCA vs 比亚迪 LFP</span></a><a class="item title" href="/2026/battery-tech-3-lfp-renaissance/"><span class="title">磷酸铁锂：从低电导率到刀片电池的逆袭之路</span></a><a class="item title" href="/2026/battery-tech-2-ncm-high-nickel/"><span class="title">NCM 三元材料的镍钴博弈：高镍化进程中的技术挑战</span></a></div></widget>
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="https://github.com/Gray2" target="_blank" rel="external nofollow noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a></div></footer>
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%94%B5%E6%B1%A0%E6%8A%80%E6%9C%AF/">电池技术</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-06-19T07:00:00.000Z">2026-06-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-06-19T06:37:21.454Z">2026-06-19</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>磷酸铁锂：从低电导率到刀片电池的逆袭之路</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>2024 年，磷酸铁锂（LFP）在全球动力电池装机量中的占比首次突破 50%，成为装机量最大的正极材料。这个数据放在五年前几乎无法想象——彼时 LFP 被普遍视为”低端选择”，能量密度不到 NCM811 的一半，电导率更是差了六个数量级。</p>
+<p>LFP 的逆袭是材料科学进步与结构创新共同作用的结果。本文从本征缺陷出发，拆解 LFP 的提升路径与市场爆发逻辑。</p>
+<h2 id="一、LFP-的本征缺陷与三大改善方向"><a href="#一、LFP-的本征缺陷与三大改善方向" class="headerlink" title="一、LFP 的本征缺陷与三大改善方向"></a>一、LFP 的本征缺陷与三大改善方向</h2><h3 id="1-1-问题有多严重？"><a href="#1-1-问题有多严重？" class="headerlink" title="1.1 问题有多严重？"></a>1.1 问题有多严重？</h3><p>LiFePO₄ 属于橄榄石型结构，FeO₆ 八面体和 PO₄ 四面体构成的三维框架提供了卓越的热稳定性（热失控温度 &gt;500°C），但代价是锂离子只能沿一维 [010] 通道迁移。</p>
+<p><strong>本征电导率：~10⁻⁹ S&#x2F;cm</strong>，比 NCM 层状材料低 6 个数量级，比电解液低 12 个数量级。</p>
+<p>这意味着如果不加任何改良，LFP 的倍率性能会极差——充放电时锂离子无法快速进出晶格，大电流下容量大幅缩水。</p>
+<h3 id="1-2-三大改善方向"><a href="#1-2-三大改善方向" class="headerlink" title="1.2 三大改善方向"></a>1.2 三大改善方向</h3><p>过去二十年，学术界和工业界围绕 LFP 的导电性问题，发展出了三种核心改善策略：</p>
+<h4 id="①-碳包覆——最基础也最有效"><a href="#①-碳包覆——最基础也最有效" class="headerlink" title="① 碳包覆——最基础也最有效"></a>① 碳包覆——最基础也最有效</h4><p>在 LFP 颗粒表面包覆一层纳米厚度的碳层（通常 2–5 nm），提供电子传输通道。这是 LFP 产业化的第一项突破技术（由 Goodenough 和 Armand 等开创）。</p>
+<ul>
+<li><strong>效果</strong>：电子电导率提升 6–8 个数量级</li>
+<li><strong>工程表现</strong>：正极配方中需额外添加 4–8% 的导电剂（炭黑 Super P、碳纳米管 CNT 等），远高于三元体系的 2–4%</li>
+</ul>
+<h4 id="②-纳米化——缩短-Li⁺-传输距离"><a href="#②-纳米化——缩短-Li⁺-传输距离" class="headerlink" title="② 纳米化——缩短 Li⁺ 传输距离"></a>② 纳米化——缩短 Li⁺ 传输距离</h4><p>将 LFP 颗粒从微米级（5–20 μm）缩小至纳米级（100–300 nm），大幅缩短锂离子在固相中的扩散距离。比亚迪 4680 LFP 的正极颗粒即采用 100–300 nm 纳米级球形颗粒设计。</p>
+<ul>
+<li><strong>效果</strong>：倍率性能显著提升，支持 2C–4C 快充</li>
+<li><strong>代价</strong>：纳米颗粒的比表面积大，副反应增多，振实密度降低</li>
+</ul>
+<h4 id="③-体相掺杂——从晶格层面改善"><a href="#③-体相掺杂——从晶格层面改善" class="headerlink" title="③ 体相掺杂——从晶格层面改善"></a>③ 体相掺杂——从晶格层面改善</h4><p>在 LFP 晶格中引入微量异价离子（如 Ti⁴⁺、Mg²⁺、Nb⁵⁺ 等），调节电子结构和 Li⁺ 迁移势垒。比亚迪的 LFP 中检测到约 0.3% 原子比的 Ti 掺杂，化学计量比接近 1:1:4。</p>
+<ul>
+<li><strong>效果</strong>：本征电导率提升 2–3 个数量级</li>
+<li><strong>趋势</strong>：掺杂 + 碳包覆联合使用已成为行业标配</li>
+</ul>
+<h2 id="二、LFP-正极配方的独特之处"><a href="#二、LFP-正极配方的独特之处" class="headerlink" title="二、LFP 正极配方的独特之处"></a>二、LFP 正极配方的独特之处</h2><p>LFP 正极片配方与 NCM 存在本质差异：</p>
+<table>
+<thead>
+<tr>
+<th align="center">子成分</th>
+<th align="center">LFP 正极片</th>
+<th align="center">NCM 正极片</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">活性物质</td>
+<td align="center">88–93%</td>
+<td align="center">90–95%</td>
+</tr>
+<tr>
+<td align="center">导电剂</td>
+<td align="center"><strong>4–8%</strong>（大幅高于三元）</td>
+<td align="center">2–4%</td>
+</tr>
+<tr>
+<td align="center">PVDF 粘结剂</td>
+<td align="center">2–5%</td>
+<td align="center">2–4%</td>
+</tr>
+</tbody></table>
+<p><strong>LFP 正极活性物质占比低 2–5 个百分点</strong>，全部让给了导电剂。这是 LFP 正极片无法做薄做轻的根本原因——必须用大量导电剂来弥补本征导电性的缺陷。</p>
+<p>从元素质量占比看 LFP 正极粉的特点：</p>
+<ul>
+<li><strong>Fe</strong>：34–36%（价值低，铁是地壳储量最丰富的金属之一）</li>
+<li><strong>P</strong>：19–20%</li>
+<li><strong>Li</strong>：4–5%（含锂量低，单位瓦时对应的锂用量反而高于三元）</li>
+<li><strong>O</strong>：39–41%</li>
+</ul>
+<p><strong>关键推论</strong>：LFP 不含任何贵金属（无 Ni、Co、Mn），正极材料成本主要来自磷酸铁和碳酸锂。这也是 LFP 成本受锂价波动影响特别大的原因。</p>
+<h2 id="三、刀片电池：结构创新的典范"><a href="#三、刀片电池：结构创新的典范" class="headerlink" title="三、刀片电池：结构创新的典范"></a>三、刀片电池：结构创新的典范</h2><p>在材料层面，LFP 的能量密度上限（约 190 Wh&#x2F;kg）已被逼近，但比亚迪的刀片电池通过电芯结构设计实现了”材料以外”的突破。</p>
+<h3 id="3-1-刀片电池的核心创新"><a href="#3-1-刀片电池的核心创新" class="headerlink" title="3.1 刀片电池的核心创新"></a>3.1 刀片电池的核心创新</h3><p>传统电池包中，电芯→模组→电池包的三级结构造成大量空间浪费。刀片电池做的事情很简单——<strong>取消模组，电芯直接成包（CTP）</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">传统电池包：电芯 → 模组 → 电池包 → 体积利用率 ~40%</span><br><span class="line">刀片电池：  电芯 → 电池包 → 体积利用率 ~60%+</span><br></pre></td></tr></table></figure>
+
+<p>刀片电池的 LFP 电芯被设计成超长（&gt;900 mm）、超薄（~13.5 mm）的”刀片”形态，直接铺设在电池包底部，既当储能单元又当结构件。</p>
+<h3 id="3-2-刀片电池三项关键工程创新"><a href="#3-2-刀片电池三项关键工程创新" class="headerlink" title="3.2 刀片电池三项关键工程创新"></a>3.2 刀片电池三项关键工程创新</h3><ol>
+<li><strong>长薄电芯设计</strong>：长宽比极高的电芯形态，有效降低电芯内部热阻，散热面积比传统方形电芯大 3–4 倍</li>
+<li><strong>蜂窝铝板结构</strong>：电芯之间填充结构胶，形成类似蜂窝铝板的刚性结构</li>
+<li><strong>热失控精准测试</strong>：严格通过针刺等极端安全测试，LFP+刀片组合实现”不起火、不爆炸”的安全承诺</li>
+</ol>
+<h3 id="3-3-LFP-刀片-vs-NCM-的能量密度困境与破局"><a href="#3-3-LFP-刀片-vs-NCM-的能量密度困境与破局" class="headerlink" title="3.3 LFP 刀片 vs NCM 的能量密度困境与破局"></a>3.3 LFP 刀片 vs NCM 的能量密度困境与破局</h3><p>LFP 刀片电池的能量密度（140–190 Wh&#x2F;kg）仍未突破材料上限。但比亚迪通过 Blade 2.0（2025.03 发布）引入了 LMFP 复合策略：</p>
+<table>
+<thead>
+<tr>
+<th align="center">版本</th>
+<th align="left">技术路线</th>
+<th align="center">能量密度</th>
+<th align="left">核心亮点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Blade 1.0</td>
+<td align="left">LFP</td>
+<td align="center">~140 Wh&#x2F;kg</td>
+<td align="left">安全、长寿命</td>
+</tr>
+<tr>
+<td align="center">Blade 2.0 长刀</td>
+<td align="left">LFP+LMFP 复合</td>
+<td align="center">210 Wh&#x2F;kg</td>
+<td align="left">续航 &gt;1000 km</td>
+</tr>
+<tr>
+<td align="center">Blade 2.0 短刀</td>
+<td align="left">LFP+LMFP 复合</td>
+<td align="center">~190 Wh&#x2F;kg</td>
+<td align="left">8C 闪充，5 分钟 10%→70%</td>
+</tr>
+</tbody></table>
+<h2 id="四、LFP-vs-NCM：14-个维度的全面对比"><a href="#四、LFP-vs-NCM：14-个维度的全面对比" class="headerlink" title="四、LFP vs NCM：14 个维度的全面对比"></a>四、LFP vs NCM：14 个维度的全面对比</h2><table>
+<thead>
+<tr>
+<th align="center">对比维度</th>
+<th align="left">三元 NCM523&#x2F;811</th>
+<th align="left">磷酸铁锂 LFP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>晶体结构</strong></td>
+<td align="left">层状</td>
+<td align="left">橄榄石</td>
+</tr>
+<tr>
+<td align="center"><strong>标称电压</strong></td>
+<td align="left">3.6–3.7 V</td>
+<td align="left"><strong>3.2 V</strong>（低 12%）</td>
+</tr>
+<tr>
+<td align="center"><strong>克容量</strong></td>
+<td align="left">160–210 mAh&#x2F;g</td>
+<td align="left">155–165 mAh&#x2F;g</td>
+</tr>
+<tr>
+<td align="center"><strong>电芯能量密度</strong></td>
+<td align="left">200–300 Wh&#x2F;kg</td>
+<td align="left">140–190 Wh&#x2F;kg</td>
+</tr>
+<tr>
+<td align="center"><strong>正极活性物质占比</strong></td>
+<td align="left">90–95%</td>
+<td align="left">88–93%</td>
+</tr>
+<tr>
+<td align="center"><strong>导电剂需求</strong></td>
+<td align="left">2–4%</td>
+<td align="left"><strong>4–8%（2 倍）</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>正极金属价值</strong></td>
+<td align="left">高（Ni+Co+Li）</td>
+<td align="left">低（Fe+P，无贵金属）</td>
+</tr>
+<tr>
+<td align="center"><strong>电解液</strong></td>
+<td align="left">10–15%，注液量略高</td>
+<td align="left">10–12%，略少</td>
+</tr>
+<tr>
+<td align="center"><strong>热失控温度</strong></td>
+<td align="left">~210°C（NCM811）</td>
+<td align="left"><strong>&gt;500°C</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>循环寿命</strong></td>
+<td align="left">800–2500 次</td>
+<td align="left"><strong>4000–8000+ 次</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>自放电</strong></td>
+<td align="left">~5%&#x2F;月</td>
+<td align="left"><strong>≤3%&#x2F;月</strong></td>
+</tr>
+<tr>
+<td align="center"><strong>低温性能</strong></td>
+<td align="left">-20°C 保持 80%+</td>
+<td align="left">-20°C 保持 70–80%</td>
+</tr>
+<tr>
+<td align="center"><strong>电芯成本</strong></td>
+<td align="left">较高（Ni&#x2F;Co 依赖）</td>
+<td align="left">较低</td>
+</tr>
+<tr>
+<td align="center"><strong>正极成本占比</strong></td>
+<td align="left">35–45%</td>
+<td align="left">25–30%</td>
+</tr>
+</tbody></table>
+<p><strong>核心差异总结</strong>：</p>
+<ul>
+<li><strong>LFP 的优势领域</strong>：安全（&gt;500°C vs ~210°C）、循环（4000–8000+ vs 800–2500）、成本（无贵金属）、自放电</li>
+<li><strong>NCM 的优势领域</strong>：能量密度（200–300 vs 140–190 Wh&#x2F;kg）、电压平台（3.6–3.7 vs 3.2 V）、低温性能</li>
+</ul>
+<h2 id="五、LFP-的边界与未来"><a href="#五、LFP-的边界与未来" class="headerlink" title="五、LFP 的边界与未来"></a>五、LFP 的边界与未来</h2><p>LFP 并非万能药。它的固有边界包括：</p>
+<ol>
+<li><strong>能量密度天花板</strong>：受限于 3.2V 低电压和 165 mAh&#x2F;g 的克容量上限，电芯级很难突破 200 Wh&#x2F;kg</li>
+<li><strong>低温性能差</strong>：-20°C 下容量保持率 70–80%，低于 NCM 的 80%+</li>
+<li><strong>倍率性能有限</strong>：虽然纳米化和碳包覆已将快充能力提升至 2–4C，但与 NCM 相比仍有差距</li>
+</ol>
+<p><strong>LFP 的未来方向</strong>：</p>
+<ul>
+<li><strong>LMFP 进一步升级</strong>：Mn 掺杂将电压提升至 3.4–3.5V，能量密度跃升至 190–210 Wh&#x2F;kg</li>
+<li><strong>超级快充优化</strong>：通过更精细的碳包覆和颗粒形貌控制，目标实现 5C–6C 快充</li>
+<li><strong>干法电极工艺</strong>：跳过溶剂 NMP、直接干法成膜，降低 LFP 正极制造成本</li>
+</ul>
+<hr>
+<p><em>数据来源：公开拆解报告、行业研报及学术文献综合整理，具体数值因厂商、代际存在差异。</em></p>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2026/battery-tech-4-4680-teardown/">4680 大圆柱电池深度拆解：特斯拉 NCA vs 比亚迪 LFP</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2026/battery-tech-2-ncm-high-nickel/">NCM 三元材料的镍钴博弈：高镍化进程中的技术挑战</a></div></section></div>
+
+
+
+
+
+
+<footer class="page-footer footnote"><hr><div class="sitemap" style="column-count:2;"><div class="sitemap-group"><span class="fs15">博客</span><a href="/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">关于</span><a href="/about/">关于我</a><a href="/atom.xml">RSS</a></div></div><div class="text"><p>本站由 <a href="/">Gray2</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>记录 · 思考 · 成长</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81LFP-%E7%9A%84%E6%9C%AC%E5%BE%81%E7%BC%BA%E9%99%B7%E4%B8%8E%E4%B8%89%E5%A4%A7%E6%94%B9%E5%96%84%E6%96%B9%E5%90%91"><span class="toc-text">一、LFP 的本征缺陷与三大改善方向</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E9%97%AE%E9%A2%98%E6%9C%89%E5%A4%9A%E4%B8%A5%E9%87%8D%EF%BC%9F"><span class="toc-text">1.1 问题有多严重？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E4%B8%89%E5%A4%A7%E6%94%B9%E5%96%84%E6%96%B9%E5%90%91"><span class="toc-text">1.2 三大改善方向</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%91%A0-%E7%A2%B3%E5%8C%85%E8%A6%86%E2%80%94%E2%80%94%E6%9C%80%E5%9F%BA%E7%A1%80%E4%B9%9F%E6%9C%80%E6%9C%89%E6%95%88"><span class="toc-text">① 碳包覆——最基础也最有效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%91%A1-%E7%BA%B3%E7%B1%B3%E5%8C%96%E2%80%94%E2%80%94%E7%BC%A9%E7%9F%AD-Li%E2%81%BA-%E4%BC%A0%E8%BE%93%E8%B7%9D%E7%A6%BB"><span class="toc-text">② 纳米化——缩短 Li⁺ 传输距离</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%91%A2-%E4%BD%93%E7%9B%B8%E6%8E%BA%E6%9D%82%E2%80%94%E2%80%94%E4%BB%8E%E6%99%B6%E6%A0%BC%E5%B1%82%E9%9D%A2%E6%94%B9%E5%96%84"><span class="toc-text">③ 体相掺杂——从晶格层面改善</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81LFP-%E6%AD%A3%E6%9E%81%E9%85%8D%E6%96%B9%E7%9A%84%E7%8B%AC%E7%89%B9%E4%B9%8B%E5%A4%84"><span class="toc-text">二、LFP 正极配方的独特之处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%88%80%E7%89%87%E7%94%B5%E6%B1%A0%EF%BC%9A%E7%BB%93%E6%9E%84%E5%88%9B%E6%96%B0%E7%9A%84%E5%85%B8%E8%8C%83"><span class="toc-text">三、刀片电池：结构创新的典范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%88%80%E7%89%87%E7%94%B5%E6%B1%A0%E7%9A%84%E6%A0%B8%E5%BF%83%E5%88%9B%E6%96%B0"><span class="toc-text">3.1 刀片电池的核心创新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%88%80%E7%89%87%E7%94%B5%E6%B1%A0%E4%B8%89%E9%A1%B9%E5%85%B3%E9%94%AE%E5%B7%A5%E7%A8%8B%E5%88%9B%E6%96%B0"><span class="toc-text">3.2 刀片电池三项关键工程创新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-LFP-%E5%88%80%E7%89%87-vs-NCM-%E7%9A%84%E8%83%BD%E9%87%8F%E5%AF%86%E5%BA%A6%E5%9B%B0%E5%A2%83%E4%B8%8E%E7%A0%B4%E5%B1%80"><span class="toc-text">3.3 LFP 刀片 vs NCM 的能量密度困境与破局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81LFP-vs-NCM%EF%BC%9A14-%E4%B8%AA%E7%BB%B4%E5%BA%A6%E7%9A%84%E5%85%A8%E9%9D%A2%E5%AF%B9%E6%AF%94"><span class="toc-text">四、LFP vs NCM：14 个维度的全面对比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81LFP-%E7%9A%84%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="toc-text">五、LFP 的边界与未来</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+
+
+<script type="text/javascript">
+  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/%5Bobject%20Object%5D`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }
+  
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.33.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.md-text img:not([class]), .md-text .image img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
