@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d6cdf"/>
+      <stop offset="100%" style="stop-color:#1a4fa8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="260" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle" opacity="0.9">Gray2 的技术笔记</text>
+  <text x="600" y="340" font-family="-apple-system, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle" opacity="0.7">工程 · 技术 · 生活</text>
+  <line x1="400" y1="400" x2="800" y2="400" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <text x="600" y="450" font-family="-apple-system, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" opacity="0.6">电池材料 · 工艺优化 · 成本分析 · 跨界思考</text>
+</svg>
