@@ -267,7 +267,7 @@ menu_id: categories
   <span class="arrow">→</span>
 </a>
 
-<a href="/gray2.github.io/2026/电池正极材料全景介绍/" class="article-item">
+<a href="/gray2.github.io/2026/battery-cathode-materials-overview/" class="article-item">
   <span class="num">09</span>
   <div class="content">
     <h4>电池正极材料全景介绍</h4>
@@ -276,7 +276,7 @@ menu_id: categories
   <span class="arrow">→</span>
 </a>
 
-<a href="/gray2.github.io/2026/锂电池各组分占比详解-三元vs磷铁锂/" class="article-item">
+<a href="/gray2.github.io/2026/battery-cell-composition-ncm-vs-lfp/" class="article-item">
   <span class="num">10</span>
   <div class="content">
     <h4>锂电池各组分占比详解：三元（NCM）vs 磷酸铁锂（LFP）</h4>
@@ -285,7 +285,7 @@ menu_id: categories
   <span class="arrow">→</span>
 </a>
 
-<a href="/gray2.github.io/2026/主流电池体系性能与拆解组成数据全编/" class="article-item">
+<a href="/gray2.github.io/2026/battery-systems-performance-teardown/" class="article-item">
   <span class="num">11</span>
   <div class="content">
     <h4>主流电池体系性能与拆解组成数据全编</h4>
@@ -318,7 +318,7 @@ menu_id: categories
   <span class="arrow">→</span>
 </a>
 
-<a href="/gray2.github.io/2026/电池回收工艺整理-原料与工艺分类/" class="article-item">
+<a href="/gray2.github.io/2026/battery-recycling-raw-materials-processes/" class="article-item">
   <span class="num">03</span>
   <div class="content">
     <h4>电池回收工艺整理——按原料与工艺分类</h4>

@@ -61,7 +61,7 @@ style:
 
 ######## Logo & Header ########
 logo:
-  avatar: '[/about/]'
+  avatar: '[/images/avatar.svg]'
   title: '[Gray2 的技术笔记](/)'
   subtitle: '工程 · 技术 · 生活'
 
