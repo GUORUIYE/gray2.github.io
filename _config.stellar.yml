@@ -180,3 +180,22 @@ footer:
     enable: false
   # 页脚导航
   nav: true
+  # 页脚站点地图
+  sitemap:
+    - title: 内容
+      items:
+        - '[博客](/)'
+        - '[专栏](/topics/)'
+        - '[归档](/archives/)'
+    - title: 更多
+      items:
+        - '[关于](/about/)'
+        - '[正极材料全景](/cathode-materials/)'
+        - '[RSS 订阅](/atom.xml)'
+    - title: 开源
+      items:
+        - '[GitHub](https://github.com/GUORUIYE)'
+        - '[Hexo](https://hexo.io)'
+        - '[Stellar 主题](https://xaoxuu.com/wiki/stellar/)'
+  # 页脚文字
+  content: 'Copyright © 2026 Gray2 | Powered by [Hexo](https://hexo.io) & [Stellar](https://xaoxuu.com/wiki/stellar/) | CC BY-NC-SA 4.0'
