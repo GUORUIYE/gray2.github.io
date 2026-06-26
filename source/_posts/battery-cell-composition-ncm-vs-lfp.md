@@ -1,4 +1,5 @@
 ---
+cover: /images/cover-12.svg
 title: 锂电池各组分占比详解：三元（NCM）vs 磷酸铁锂（LFP）
 date: 2026-06-14 18:10:00
 updated: 2026-06-14 18:10:00

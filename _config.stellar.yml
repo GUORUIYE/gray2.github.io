@@ -101,12 +101,12 @@ menubar:
 site_tree:
   home:
     leftbar: welcome, recent
-    rightbar:
+    rightbar: tagcloud
   index_blog:
     base_dir: blog
     menu_id: post
     leftbar: welcome, recent
-    rightbar:
+    rightbar: tagcloud
     nav_tabs:
   post:
     menu_id: post
@@ -115,6 +115,18 @@ site_tree:
   page:
     leftbar: recent
     rightbar: toc
+
+
+######## Sidebar Widgets ########
+widgets:
+  welcome:
+    layout: markdown
+    content: |
+      **Gray2 的技术笔记**
+
+      记录新能源制造与工业工程领域的技术思考。
+
+      🔬 电池材料 · ♻️ 回收工艺 · 📊 数据分析
 
 
 ######## Article ########

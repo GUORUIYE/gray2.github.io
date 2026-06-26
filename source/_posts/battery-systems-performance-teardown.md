@@ -1,4 +1,5 @@
 ---
+cover: /images/cover-13.svg
 title: 主流电池体系性能与拆解组成数据全编
 date: 2026-06-14 18:00:00
 updated: 2026-06-14 18:00:00

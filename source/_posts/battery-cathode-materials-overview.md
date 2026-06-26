@@ -1,4 +1,5 @@
 ---
+cover: /images/cover-11.svg
 title: 电池正极材料全景介绍
 date: 2026-06-14 18:30:00
 updated: 2026-06-14 18:30:00

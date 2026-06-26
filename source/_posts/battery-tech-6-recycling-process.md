@@ -1,4 +1,5 @@
 ---
+cover: /images/cover-06.svg
 title: 锂电池回收工艺三国演义：火法、湿法、直接回收的较量
 date: 2026-06-19 16:00:00
 tags:
@@ -207,3 +208,10 @@ LFP 的湿法回收流程相对简单：
 ---
 
 *数据来源：邦普 BRUNP 内部工艺资料、Advanced Functional Materials (2023)、《储能科学与技术》(2022)、ReCell Center 公开报告。*
+
+---
+
+> **系列导航** 上一篇：[钠离子电池评估](/2026/battery-tech-5-sodium-ion/) ｜ 下一篇：[电池回收的经济账](/2026/battery-tech-7-recycling-economics/)
+
+> 更多文章请访问 [专栏首页](/topics/)。
+

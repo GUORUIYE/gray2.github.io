@@ -1,0 +1,8 @@
+welcome:
+  layout: markdown
+  content: |
+    **Gray2 的技术笔记**
+
+    记录新能源制造与工业工程领域的技术思考。
+
+    🔬 电池材料 · ♻️ 回收工艺 · 📊 数据分析

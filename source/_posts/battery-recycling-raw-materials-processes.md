@@ -1,4 +1,5 @@
 ---
+cover: /images/cover-14.svg
 title: 电池回收工艺整理——按原料与工艺分类
 date: 2026-06-14 18:20:00
 updated: 2026-06-14 18:20:00
